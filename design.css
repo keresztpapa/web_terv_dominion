@@ -39,7 +39,7 @@ li a:hover{
 
 /*Nem meglátogatott linkek*/
 a:link{
-    color: rgb(112, 146, 190);
+    color: black;
 }
 
 /*Meglátogatott linkek*/
