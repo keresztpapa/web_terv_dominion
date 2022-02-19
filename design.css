@@ -1,0 +1,39 @@
+/*Oldal törzse*/
+body{
+    background-color: black;
+}
+
+/*Lista*/
+ul{
+    background-color: rgb(136, 0, 21);
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+}
+
+/*Lista elemek*/
+li {
+    list-style-type: none; /*Felsorolás elemeket eltűnteti*/
+    display: inline-block; /*Blokkba rakja az elemeket*/
+    font-size: 27px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+}
+
+/*Lista linkek*/
+li a{
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 15px 20px;
+    text-decoration: none;
+}
+
+li a:hover{
+    background-color: rgb(97, 0, 16);
+}
+
+#fokep{
+    text-align: center;
+}
+
