@@ -98,13 +98,17 @@ h2{
     margin-left: 15%;
     margin-right: 15%;
     padding: 10px;
+    text-align: center;
+    position: relative;   
+    top: 50%;
 }
 
 /*Információs div-ek*/
 .infok{
-    width: 625px;
+    width: 60%;
     border: 3px solid black;
     float: right;
+    position: relative;   
     margin-right: 9%;
     padding: 10px;
 }
