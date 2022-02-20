@@ -1,20 +1,20 @@
 # web_terv_dominion
 
-Aktuális menüponton más dizájn
-Menü görgetésnél is látszódjon
-Tartalom animálás
-Animáció elemekre, háttére, stb
-HTML5 elemek (header, footer, még valami)
-Táblázat(fejléc+headers attr.)
-z-index
-float és clear
-Pseudo elemek
-Nyomtatási lap
-Multimédiás elemek
-+1 struktúrális elem
-flexbox vagy grid
-Pozícionálás
-Árnyékok
-Transzformálás
-Attr. alapján való kijelölés
-Kapcsolat alapjánn kijelölés
+Aktuális menüponton más dizájí<br/>
+Menü görgetésnél is látszódjon<br/>
+Tartalom animálás<br/>
+Animáció elemekre, háttére, stb<br/>
+HTML5 elemek (header, footer, még valami)<br/>
+Táblázat(fejléc+headers attr.)<br/>
+z-index<br/>
+float és clear<br/>
+Pseudo elemek<br/>
+Nyomtatási lap<br/>
+Multimédiás elemek<br/>
++1 struktúrális elem<br/>
+flexbox vagy grid<br/>
+Pozícionálás<br/>
+Árnyékok<br/>
+Transzformálás<br/>
+Attr. alapján való kijelölés<br/>
+Kapcsolat alapjánn kijelölés<br/>
