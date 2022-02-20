@@ -133,3 +133,17 @@ h2{
     padding-bottom: 50px;
     padding-left: 50px;
 }
+
+/*Idézet dobozok*/
+blockquote{
+    border: 1px solid blacK;
+    padding: 5px;
+    width: 1055px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 20px;
+    font-size: 30px;
+    border-radius: 10px;
+    font-style: italic;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}

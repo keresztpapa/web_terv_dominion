@@ -11,7 +11,7 @@ float és clear<br/>
 Pseudo elemek<br/>
 Nyomtatási lap<br/>
 Multimédiás elemek<br/>
-+1 struktúrális elem   X<br/>
++1 struktúrális elem   &#9989;<br/>
 flexbox vagy grid<br/>
 Pozícionálás<br/>
 Árnyékok<br/>
