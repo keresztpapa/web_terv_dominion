@@ -5,7 +5,7 @@
 [ ] Tartalom animálás<br/>
 [ ] Animáció elemekre, háttére, stb<br/>
 [ ] HTML5 elemek (header, footer, még valami)<br/>
-[ ] Táblázat(fejléc+headers attr.)   X<br/>
+[ X ] Táblázat(fejléc+headers attr.)<br/>
 [ ] z-index<br/>
 [ ] float és clear<br/>
 [ ] Pseudo elemek<br/>
