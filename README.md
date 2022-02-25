@@ -4,14 +4,14 @@
 [ ] Menü görgetésnél is látszódjon<br/>
 [ ] Tartalom animálás<br/>
 [ ] Animáció elemekre, háttére, stb<br/>
-[ ] HTML5 elemek (header, footer, még valami)<br/>
+[ X ] HTML5 elemek (header, footer, nav, ezek csak példák lehet más is, de 4 kéne belőle)<br/>
 [ X ] Táblázat(fejléc+headers attr.)<br/>
 [ ] z-index<br/>
 [ ] float és clear<br/>
 [ ] Pseudo elemek<br/>
-[ ] Nyomtatási lap<br/>
+[ X ] Nyomtatási lap<br/>
 [ ] Multimédiás elemek<br/>
-[ ] +1 struktúrális elem   &#9989;<br/>
+[ &#9989; ] +1 struktúrális elem<br/>
 [ ] flexbox vagy grid<br/>
 [ ] Pozícionálás<br/>
 [ ] Árnyékok<br/>

@@ -188,3 +188,18 @@ blockquote{
 .rating-item:hover ~ .rating-item::before {
     content: "\2606";
 }
+.checked {
+    color: orange;
+  }
+
+footer{
+    position: sticky;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(152, 45, 161);
+    color: rgb(34, 30, 30);
+    text-align: center;
+    margin-bottom: 0;
+}
