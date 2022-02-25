@@ -1,0 +1,88 @@
+@media print {
+  
+    body {
+        background-color: rgb(28,26,26);
+    }
+    
+    footer{
+        display: none;
+    }
+
+    #logo{
+        width: 40%;
+    }
+
+    ul{
+        background-color: rgb(136, 0, 21);
+        list-style-type: none;
+        padding: 0;
+        overflow: hidden;
+        margin-block-start: 0em;
+        margin-block-end: 0em;
+        border-style: solid;
+        border-collapse: collapse;
+    }
+
+    li {
+        list-style-type: none; /*Felsorolás elemeket eltűnteti*/
+        display: inline-block; /*Blokkba rakja az elemeket*/
+        font-size: 15px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        text-align: center;
+        border-style: solid;
+        
+    }
+    
+    /*Menü linkek*/
+    li a{
+        display: block;
+        color: black;
+        text-align: center;    height: 100%;
+        padding: 15px 20px;
+        text-decoration: none;
+    }
+    
+    /*Menü linkjei*/
+    li a:hover{
+        background-color: rgb(97, 0, 16);
+    }
+
+    /*Többi oldal leírásának formázása*/
+    .leiras{
+        font-family:'Courier New', Courier, monospace;
+        text-align: justify;
+        border: 3px solid black;
+        padding: 10px;
+    }
+
+    /*Div elem formázás*/
+    .oldalDiv{
+        width: 100%;
+        margin-top: 20px;
+        text-align: center;
+        position: relative;   
+        top: 50%;
+    }
+
+    .infok{
+        width: 60%;
+        border: 3px solid black;
+        float: right;
+        position: relative;   
+        margin-right: 9%;
+        padding: 10px;
+    }
+
+    blockquote{
+        border: 1px solid blacK;
+        padding: 5px;
+        width: 1055px;
+        text-align: center;
+        margin: auto;
+        margin-bottom: 20px;
+        font-size: 30px;
+        border-radius: 10px;
+        font-style: italic;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+}
