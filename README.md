@@ -4,7 +4,7 @@
 [ ] Menü görgetésnél is látszódjon<br/>
 [ ] Tartalom animálás<br/>
 [ ] Animáció elemekre, háttére, stb<br/>
-[ X ] HTML5 elemek (header, footer, nav, ezek csak példák lehet más is, de 4 kéne belőle)<br/>
+[ &#9989; ] HTML5 elemek (header, footer, nav, ezek csak példák lehet más is, de 4 kéne belőle)<br/>
 [ X ] Táblázat(fejléc+headers attr.)<br/>
 [ ] z-index<br/>
 [ ] float és clear<br/>
