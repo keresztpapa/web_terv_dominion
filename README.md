@@ -1,20 +1,23 @@
 # web_terv_dominion
 
-[ 1 ] Aktuális menüponton más dizájí<br/>
+[ 1 ] Aktuális menüponton más dizájn<br/>
 [ &#9989; ] Menü görgetésnél is látszódjon<br/>
 [ ] Tartalom animálás<br/>
 [ ] Animáció elemekre, háttére, stb<br/>
 [ &#9989; ] HTML5 elemek (header, footer, nav, ezek csak példák lehet más is, de 4 kéne belőle)<br/>
-[ &#9989; ] Táblázat(fejléc+headers attr.)<br/>
+[ még dolgozni kell rajta ] Táblázat(fejléc+headers attr.)<br/>
 [ ] z-index<br/>
-[ ] float és clear<br/>
-[ ] Pseudo elemek<br/>
+[ &#9989; ] float és clear<br/>
+[ 1/3 ] Pseudo elemek<br/>
 [ &#9989; ] Nyomtatási lap<br/>
-[ ] Multimédiás elemek<br/>
+[ &#9989; ] Multimédiás elemek<br/>
 [ &#9989; ] +1 struktúrális elem<br/>
 [ ] flexbox vagy grid<br/>
-[ ] Pozícionálás<br/>
-[ ] Árnyékok<br/>
-[ ] Transzformálás<br/>
-[ ] Attr. alapján való kijelölés<br/>
-[ ] Kapcsolat alapjánn kijelölés<br/>
+[ &#9989; ] Pozícionálás<br/>
+[ &#9989; ] Árnyékok<br/>
+[ &#9989; ] Transzformálás<br/>
+[ &#9989; ] Attr. alapján való kijelölés<br/>
+[ &#9989; ] Kapcsolat alapjánn kijelölés<br/>
+[ ] Űrlaphoz reset gomb
+[ ] Űrlaphoz mezőcsoportosítás
+[ ] Űrlaphoz +2 input még
