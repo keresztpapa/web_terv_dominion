@@ -1,11 +1,11 @@
 # web_terv_dominion
 
-[ ] Aktuális menüponton más dizájí<br/>
-[ ] Menü görgetésnél is látszódjon<br/>
+[ 1 ] Aktuális menüponton más dizájí<br/>
+[ &#9989; ] Menü görgetésnél is látszódjon<br/>
 [ ] Tartalom animálás<br/>
 [ ] Animáció elemekre, háttére, stb<br/>
 [ &#9989; ] HTML5 elemek (header, footer, nav, ezek csak példák lehet más is, de 4 kéne belőle)<br/>
-[ X ] Táblázat(fejléc+headers attr.)<br/>
+[ &#9989; ] Táblázat(fejléc+headers attr.)<br/>
 [ ] z-index<br/>
 [ ] float és clear<br/>
 [ ] Pseudo elemek<br/>

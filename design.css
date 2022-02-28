@@ -12,6 +12,11 @@ ul{
     overflow: hidden;
     margin-block-start: 0em;
     margin-block-end: 0em;
+
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+
 }
 
 /*Menü elemek*/
@@ -202,4 +207,27 @@ footer{
     color: rgb(34, 30, 30);
     text-align: center;
     margin-bottom: 0;
+}
+
+
+/*index.html menüje*/
+#index{
+    width: 75%;
+    height: 50px;
+
+    border-radius: 25px;
+
+    background-color: rgb(136, 0, 21);
+    list-style-type: none;
+    padding: 0;
+
+    text-align: center;
+    
+    position: fixed;
+    left: 12.5%;
+    
+    position: sticky;
+    top: 0;
+
+    overflow: visible;
 }
