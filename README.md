@@ -18,6 +18,6 @@
 [ &#9989; ] Transzformálás<br/>
 [ &#9989; ] Attr. alapján való kijelölés<br/>
 [ &#9989; ] Kapcsolat alapjánn kijelölés<br/>
-[ ] Űrlaphoz reset gomb
-[ ] Űrlaphoz mezőcsoportosítás
-[ ] Űrlaphoz +2 input még
+[ ] Űrlaphoz reset gomb<br/>
+[ ] Űrlaphoz mezőcsoportosítás<br/>
+[ ] Űrlaphoz +2 input még<br/>
