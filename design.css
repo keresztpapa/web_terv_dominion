@@ -4,53 +4,6 @@ body{
     margin: 0;
 }
 
-/*Lista/Menü*/
-ul{
-    background-color: rgb(136, 0, 21);
-    list-style-type: none;
-    padding: 0;
-    overflow: hidden;
-    margin-block-start: 0em;
-    margin-block-end: 0em;
-
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-
-}
-
-/*Menü elemek*/
-li {
-    list-style-type: none; /*Felsorolás elemeket eltűnteti*/
-    display: inline-block; /*Blokkba rakja az elemeket*/
-    font-size: 25px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    text-align: center;
-}
-
-/*Menü linkek*/
-li a{
-    display: block;
-    color: black;
-    text-align: center;    height: 100%;
-    padding: 15px 20px;
-    text-decoration: none;
-}
-
-/*Menü linkjei*/
-li a:hover{
-    background-color: rgb(97, 0, 16);
-}
-
-/*Nem meglátogatott linkek*/
-a:link{
-    color: black;
-}
-
-/*Meglátogatott linkek*/
-a:visited{
-    color: black;
-}
 
 /*Főoldal képe*/
 #fokep{
@@ -208,29 +161,6 @@ footer{
     text-align: center;
     margin-bottom: 0;
 }
-
-/*index.html menüje*/
-#index{
-    width: 75%;
-    height: 50px;
-
-    border-radius: 25px;
-
-    background-color: rgb(136, 0, 21);
-    list-style-type: none;
-    padding: 0;
-
-    text-align: center;
-    
-    position: fixed;
-    left: 12.5%;
-    
-    position: sticky;
-    top: 0;
-
-    overflow: visible;
-}
-
 /*img, mely rendelkezik alt attribútummal*/
 img[alt]{
     box-shadow: 10px 10px 5px rgb(0, 0, 0);
@@ -277,3 +207,37 @@ td, th{
 img[title="Logo"]{
     animation: kepMegjelenik 10s;
 }
+
+/*
+            background-color: rgb(136, 0, 21);
+            list-style-type: none;
+            padding: 0;
+            overflow: hidden;
+            margin-block-start: 0em;
+            margin-block-end: 0em;
+
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+*/
+
+/*
+            width: 75%;
+            height: 50px;
+
+            border-radius: 25px;
+
+            background-color: rgb(136, 0, 21);
+            list-style-type: none;
+            padding: 0;
+
+            text-align: center;
+            
+            position: fixed;
+            left: 12.5%;
+            
+            position: sticky;
+            top: 0;
+
+            overflow: visible;
+*/

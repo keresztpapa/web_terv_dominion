@@ -11,8 +11,69 @@
 <body>
     <img src="kepek/logo.png" style="width: 600px;" title="Logo">
 
+    <style>
+        /*Lista/Menü*/
+        ul{
+            width: 60%;
+            height: 40px;
+
+            border-radius: 25px;
+
+            background-color: rgb(136, 0, 21);
+            list-style-type: none;
+            text-align: center;
+
+            position: sticky;
+            top: 0;
+            left: 12.5%;
+            
+            padding: 1% 5%;
+
+            overflow: visible;
+        }
+
+        /*Menü elemek*/
+        li {
+            height: auto;
+            list-style-type: none; /*Felsorolás elemeket eltűnteti*/
+            display: inline-block; /*Blokkba rakja az elemeket*/
+            font-size: 25px;
+
+            padding-top: 5px;
+            padding-bottom: 5px;
+            margin: 5px;
+
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            text-align: center;
+        }
+
+        /*Menü linkek*/
+        li a{
+            display: block;
+            color: black;
+            text-align: center;    
+            text-decoration: none;
+        }
+
+        /*Menü linkjei*/
+        li a:hover{
+            background-color: rgb(97, 0, 16);
+            
+        }
+
+        /*Nem meglátogatott linkek*/
+        a:link{
+            color: black;
+        }
+
+        /*Meglátogatott linkek*/
+        a:visited{
+            color: black;
+        }
+    </style>
+
     <!--Menüsor-->
-    <ul id="index">
+    <ul>
         <li><a href="index.html">Főoldal</a></li>
         <li><a href="daredevil.html">Daredevil</a></li>
         <li><a href="jessicaJones.html">Jessica Jones</a></li>
