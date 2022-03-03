@@ -50,6 +50,10 @@ h2{
     padding: 10px;
 }
 
+.leiras::after{
+    content: "\ Forrás: Wikipedia";
+}
+
 /*Div elem formázás*/
 .oldalDiv{
     margin: 20px;
@@ -103,6 +107,7 @@ blockquote{
     width: 1055px;
     text-align: center;
     margin: auto;
+    margin-top: 20px;
     margin-bottom: 20px;
     font-size: 30px;
     border-radius: 10px;
@@ -156,10 +161,11 @@ footer{
     padding-bottom: 1px;
     bottom: 0;
     width: 100%;
-    background-color: rgb(152, 8, 165);
+    background-color: rgb(12, 92, 167);
     color: rgb(34, 30, 30);
     text-align: center;
     margin-bottom: 0;
+    line-height: 40%;
 }
 /*img, mely rendelkezik alt attribútummal*/
 img[alt]{
@@ -167,7 +173,9 @@ img[alt]{
 }
 
 /*Videó*/
-div video {
+iframe {
+    width: 1000px;
+    height: 600px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -186,7 +194,7 @@ div#kocka{
 
 /*táblázat*/
 table{
-    width: 100%;
+    width: 1065px;
     background-color: firebrick;
     text-align: center;
     margin: auto;
@@ -196,6 +204,10 @@ table{
 }
 td, th{
     border: 1px solid black;
+}
+
+tr.felsorolas{
+    font-style: italic;
 }
 
 /*megjelenik a logo a semmiből(nem működik még)*/
