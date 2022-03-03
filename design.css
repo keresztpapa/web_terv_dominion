@@ -36,6 +36,10 @@ h2{
     text-align: center;
 }
 
+#menupont{
+    background-color: rgb(97, 0, 16);
+}
+
 /*Főoldal leírásnak a szöveg formázása*/
 #foleiras{
     font-family:'Courier New', Courier, monospace;
@@ -167,6 +171,7 @@ footer{
     margin-bottom: 0;
     line-height: 40%;
 }
+
 /*img, mely rendelkezik alt attribútummal*/
 img[alt]{
     box-shadow: 10px 10px 5px rgb(0, 0, 0);
@@ -202,12 +207,28 @@ table{
     border-collapse: collapse;
     margin-bottom: 10px;    
 }
-td, th{
+
+td{
     border: 1px solid black;
 }
 
-tr.felsorolas{
+th{
+    border: 1px solid black;
+    font-style: bold;
+}
+
+td.felsorolas{
     font-style: italic;
+}
+
+#cetli{
+    width: 150px;
+    height: 80px;
+    background-color: rgb(182, 182, 8);
+    transform: rotate(20deg);
+    margin-left: auto; 
+    margin-right: 20px;
+    margin-bottom: 20px;
 }
 
 /*megjelenik a logo a semmiből(nem működik még)*/
