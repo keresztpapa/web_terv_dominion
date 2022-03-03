@@ -8,7 +8,7 @@
 [ még dolgozni kell rajta ] Táblázat(fejléc+headers attr.)<br/>
 [ ] z-index<br/>
 [ &#9989; ] float és clear<br/>
-[ 1/3 ] Pseudo elemek<br/>
+[ 2/3 ] Pseudo elemek<br/>
 [ &#9989; ] Nyomtatási lap<br/>
 [ &#9989; ] Multimédiás elemek<br/>
 [ &#9989; ] +1 struktúrális elem<br/>
@@ -21,3 +21,4 @@
 [ ] Űrlaphoz reset gomb<br/>
 [ ] Űrlaphoz mezőcsoportosítás<br/>
 [ ] Űrlaphoz +2 input még<br/>
+[ ] z-index + animáció
