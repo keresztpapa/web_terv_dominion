@@ -1,5 +1,5 @@
 const rate = document.querySelector('.rating');
-const items = rate.querySelectorAll('.rating-item')
+const items = rate.querySelectorAll('.rating-item');
 
 rate.onclick = e => {
     const elClass = e.target.classList;
