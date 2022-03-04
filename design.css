@@ -78,6 +78,12 @@ h2{
     margin-right: 9%;
     padding: 10px;
 }
+/*
+
+*/
+#login{
+    float:right;
+}
 
 /*login box form'y'sa*/
 #login_box{
