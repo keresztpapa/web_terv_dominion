@@ -20,4 +20,5 @@
 [ ] Űrlaphoz reset gomb<br/>
 [ ] Űrlaphoz mezőcsoportosítás<br/>
 [ ] Űrlaphoz +2 input még<br/>
-[ ] z-index + animáció
+[ ] z-index + animáció <br/>
+[ &#9989; ] iframe + embedded linkelt yt előzetesek
