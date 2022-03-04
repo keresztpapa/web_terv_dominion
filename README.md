@@ -21,3 +21,4 @@
 [ ] Űrlaphoz mezőcsoportosítás<br/>
 [ ] Űrlaphoz +2 input még<br/>
 [ ] z-index + animáció
+[ &#9989; ] iframe + embedded linkelt yt előzetesek
