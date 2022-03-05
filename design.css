@@ -55,7 +55,13 @@ h2{
 }
 
 .leiras::after{
-    content: "\ Forrás: Wikipedia";
+    content: "\a Forrás: Wikipedia";
+    white-space: pre;
+}
+
+.leiras::first-letter{
+    font-family: Lucida Handwriting;
+    font-size: 30px;
 }
 
 /*Div elem formázás*/

@@ -7,7 +7,7 @@
 [ &#9989; ] HTML5 elemek (header, footer, nav, ezek csak példák lehet más is, de 4 kéne belőle)<br/>
 [ még dolgozni kell rajta ] Táblázat(fejléc+headers attr.)<br/>
 [ &#9989; ] float és clear<br/>
-[ 2/3 ] Pseudo elemek<br/>
+[ &#9989; ] Pseudo elemek<br/>
 [ &#9989; ] Nyomtatási lap<br/>
 [ ] Multimédiás elemek<br/>
 [ &#9989; ] +1 struktúrális elem<br/>
