@@ -23,26 +23,25 @@
 [ ] z-index + animáció <br/>
 [ &#9989; ] iframe + embedded linkelt yt előzetesek
 
-2.mérföldkő
-[ ] 5 részletes kidolgozott php
-[ ] Adattovábbítás HTTP POST-tal
-[ ] Intuitív inputok, azaz jelzik hol mit kér
-[ ] GET paraméter
-[ ] OOP
-[ ] Sütik értelmes használata
-[ ] Regisztráció-->adatok tárolása
-[ ] Űrlapmező kitöltés szerveroldalon ellenőrizni
-[ ] Kezelje ha van foglalt f.h.név vagy e-mail
-[ ] Jelszót 2szer beírni
-[ ] Rosszul kitöltött/ nem kitöltött mezőkre figyelmeztessen
-[ ] Jelszavak biztonnságos tárolása
-[ ] Bejelentkezés az oldalra
-[ ] Bejelentkezett f.h.-k lássanak bizonyos oldalakat
-[ ] Kijelentkezés
-[ ] f.h-k módosíthatnak adatot (sajátot)
-[ ] Profilkép feltöltés
-[ ] F.h.-i fiók törlése
-[ ] Más f.h. adatainak megtekitése+saját adatok publikussá tétele( vagy nem)
-[ ] Üzenet küldés
-[ ] Jogosultságok
-
+2.mérföldkő<br/>
+[ ] 5 részletes kidolgozott php<br/>
+[ ] Adattovábbítás HTTP POST-tal<br/>
+[ ] Intuitív inputok, azaz jelzik hol mit kér<br/>
+[ ] GET paraméter<br/>
+[ ] OOP<br/>
+[ ] Sütik értelmes használata<br/>
+[ ] Regisztráció-->adatok tárolása<br/>
+[ ] Űrlapmező kitöltés szerveroldalon ellenőrizni<br/>
+[ ] Kezelje ha van foglalt f.h.név vagy e-mail<br/>
+[ ] Jelszót 2szer beírni<br/>
+[ ] Rosszul kitöltött/ nem kitöltött mezőkre figyelmeztessen<br/>
+[ ] Jelszavak biztonnságos tárolása<br/>
+[ ] Bejelentkezés az oldalra<br/>
+[ ] Bejelentkezett f.h.-k lássanak bizonyos oldalakat<br/>
+[ ] Kijelentkezés<br/>
+[ ] f.h-k módosíthatnak adatot (sajátot)<br/>
+[ ] Profilkép feltöltés<br/>
+[ ] F.h.-i fiók törlése<br/>
+[ ] Más f.h. adatainak megtekitése+saját adatok publikussá tétele( vagy nem)<br/>
+[ ] Üzenet küldés<br/>
+[ ] Jogosultságok<br/>
