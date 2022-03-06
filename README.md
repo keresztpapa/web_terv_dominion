@@ -22,3 +22,27 @@
 [ ] Űrlaphoz +2 input még<br/>
 [ ] z-index + animáció <br/>
 [ &#9989; ] iframe + embedded linkelt yt előzetesek
+
+2.mérföldkő
+[ ] 5 részletes kidolgozott php
+[ ] Adattovábbítás HTTP POST-tal
+[ ] Intuitív inputok, azaz jelzik hol mit kér
+[ ] GET paraméter
+[ ] OOP
+[ ] Sütik értelmes használata
+[ ] Regisztráció-->adatok tárolása
+[ ] Űrlapmező kitöltés szerveroldalon ellenőrizni
+[ ] Kezelje ha van foglalt f.h.név vagy e-mail
+[ ] Jelszót 2szer beírni
+[ ] Rosszul kitöltött/ nem kitöltött mezőkre figyelmeztessen
+[ ] Jelszavak biztonnságos tárolása
+[ ] Bejelentkezés az oldalra
+[ ] Bejelentkezett f.h.-k lássanak bizonyos oldalakat
+[ ] Kijelentkezés
+[ ] f.h-k módosíthatnak adatot (sajátot)
+[ ] Profilkép feltöltés
+[ ] F.h.-i fiók törlése
+[ ] Más f.h. adatainak megtekitése+saját adatok publikussá tétele( vagy nem)
+[ ] Üzenet küldés
+[ ] Jogosultságok
+
