@@ -20,7 +20,8 @@
 [ ] Űrlaphoz reset gomb<br/>
 [ ] Űrlaphoz mezőcsoportosítás<br/>
 [ ] Űrlaphoz +2 input még<br/>
-[ ] z-index + animáció <br/>
+[ ] Animáció <br/>
+[ &#9989; ] z-index <br/>
 [ &#9989; ] iframe + embedded linkelt yt előzetesek
 
 2.mérföldkő<br/>
