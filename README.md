@@ -9,7 +9,7 @@
 [ &#9989; ] float és clear<br/>
 [ &#9989; ] Pseudo elemek<br/>
 [ &#9989; ] Nyomtatási lap<br/>
-[ ] Multimédiás elemek<br/>
+[ &#9989; ] Multimédiás elemek<br/>
 [ &#9989; ] +1 struktúrális elem<br/>
 [ ] flexbox vagy grid<br/>
 [ 2/3 ] Pozícionálás<br/>
@@ -17,7 +17,7 @@
 [ &#9989; ] Transzformálás<br/>
 [ &#9989; ] Attr. alapján való kijelölés<br/>
 [ &#9989; ] Kapcsolat alapjánn kijelölés<br/>
-[ ] Űrlaphoz reset gomb<br/>
+[ &#9989; ] Űrlaphoz reset gomb<br/>
 [ ] Űrlaphoz mezőcsoportosítás<br/>
 [ ] Űrlaphoz +2 input még<br/>
 [ ] Animáció <br/>
