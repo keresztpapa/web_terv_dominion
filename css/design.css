@@ -1,0 +1,313 @@
+/*Oldal törzse*/
+body{
+    background-color: rgb(28,26,26);
+    margin: 0;
+}
+
+
+/*Főoldal képe*/
+#fokep{
+    display: block; 
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+/*Főoldal div elemje*/
+#fooldalDiv{
+    background-color: rgb(136, 0, 21);
+    margin: 20px;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding: 10px;
+}
+
+/*1. címsor*/
+#udvozles{
+    text-align: center;
+    font-family: Franklin Gothic Medium;
+}
+
+/*2. címsor*/
+h2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+}
+
+
+/*Főoldal leírásnak a szöveg formázása*/
+#foleiras{
+    font-family:'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+/*Többi oldal leírásának formázása*/
+.leiras{
+    font-family:'Courier New', Courier, monospace;
+    text-align: justify;
+    border: 3px solid black;
+    padding: 10px;
+}
+
+.leiras::after{
+    content: "\a Forrás: Wikipedia";
+    white-space: pre;
+}
+
+.leiras::first-letter{
+    font-family: Lucida Handwriting;
+    font-size: 30px;
+}
+
+/*Div elem formázás*/
+.oldalDiv{
+    width: 60%;
+    margin: 20px;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding: 10px;
+    text-align: center;
+    position: relative;   
+    top: 50%;
+    float: right;
+}
+
+/*Információs div-ek*/
+.infok{
+    width: 60%;
+    border: 3px solid black;
+    float: right;
+    position: relative;   
+    margin-right: 9%;
+    padding: 10px;
+}
+/*
+
+*/
+#login{
+    float:right;
+}
+
+/*login box form'y'sa*/
+#login_box{
+    background-color: rgb(136, 0, 21);
+    color: black;
+    font-size: 36px;
+
+    border-radius: 25px;
+
+    text-align: center;
+    position: relative;   
+    
+    top: 50%;
+    left: 50%;
+    width: 250px;
+    height: 350px;
+
+    margin-top: 200px;
+    margin-left: -200px;
+
+    padding-top: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+}
+
+.button {
+    border: none;
+    border-radius: 25px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    background-color: #640d0d;
+}
+
+/*Idézet dobozok*/
+blockquote{
+    border: 1px solid blacK;
+    padding: 5px;
+    width: 1055px;
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    border-radius: 10px;
+    font-style: italic;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/*csillagok*/
+.rating {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    }
+    
+.rating li {
+    list-style-type: none
+}
+
+.rating-item {
+    cursor: pointer;
+    font-size:2em;
+    color: yellow;
+}
+
+/* initial: make all stars full */
+.rating-item::before {
+    content: "\2605";
+}
+
+/* make until the clicked star (the rest) empty */
+.rating-item.active ~ .rating-item::before {
+    content: "\2606";
+}
+
+/* on hover make all full */
+.rating:hover .rating-item::before {
+    content: "\2605";
+}
+
+/* make until the hovered (the rest) empty */
+.rating-item:hover ~ .rating-item::before {
+    content: "\2606";
+}
+.checked {
+    color: orange;
+  }
+
+footer{
+    position: sticky;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(12, 92, 167);
+    color: rgb(34, 30, 30);
+    text-align: center;
+    margin-bottom: 0;
+    line-height: 40%;
+}
+
+/*img, mely rendelkezik alt attribútummal*/
+img[alt]{
+    box-shadow: 10px 10px 5px rgb(0, 0, 0);
+}
+
+/*Videó*/
+iframe {
+    width: 1000px;
+    height: 600px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    clear: both;
+    border:0;
+}
+
+/*Üdvözlő szöveg melleti dobozok*/
+div#kocka{
+    border: 1px solid black;
+    background-color: crimson;
+    transform: rotate(45deg);
+    height: 10px;
+    width: 10px;
+    margin-top: 7px;
+}
+
+/*táblázat*/
+table{
+    width: 1065px;
+    background-color: firebrick;
+    text-align: center;
+    margin: auto;
+    border: 2px solid black;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+}
+
+td{
+    border: 1px solid black;
+    height: 40px;
+}
+
+td.sorkezdo{
+    font-style: italic;
+}
+
+th{
+    border: 1px solid black;
+}
+
+p.jellemzo{
+    margin: auto;
+    text-align: center;
+    font-size: 30px;
+    background-color: firebrick;
+    display: block;
+    width: 1065px;
+    margin-bottom: 20px;
+}
+
+#cetli{
+    width: 150px;
+    height: 80px;
+    background-color: rgb(182, 182, 8);
+    transform: rotate(20deg);
+    margin-left: auto; 
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+/*megjelenik a logo a semmiből(nem működik még)*/
+@keyframes kepMegjelenik{
+    from{ display: none; }
+    to{ display:initial; }
+}
+
+img[title="Logo"]{
+    animation: kepMegjelenik 10s;
+}
+
+
+/*
+            background-color: rgb(136, 0, 21);
+            list-style-type: none;
+            padding: 0;
+            overflow: hidden;
+            margin-block-start: 0em;
+            margin-block-end: 0em;
+
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+*/
+
+/*
+            width: 75%;
+            height: 50px;
+
+            border-radius: 25px;
+
+            background-color: rgb(136, 0, 21);
+            list-style-type: none;
+            padding: 0;
+
+            text-align: center;
+            
+            position: fixed;
+            left: 12.5%;
+            
+            position: sticky;
+            top: 0;
+
+            overflow: visible;
+*/
