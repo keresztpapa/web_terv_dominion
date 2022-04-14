@@ -45,7 +45,7 @@
 <body>
     <img src="../kepek/logo.png" style="width: 600px;" title="Logo">
    
-    <?php include_once "php/menu.php"; ?>
+    <?php include_once "php/template/menu.php"; ?>
 
     <!--Luke Cage leírás-->
     <div class="oldalDiv" style="background-color: rgb(204, 129, 27);">
@@ -74,7 +74,7 @@
         "I'll enforce the unwritten rules while you enforce the written ones."
     </blockquote>
     
-    <?php include_once "php/footer.php"; ?>
+    <?php include_once "php/template/footer.php"; ?>
 
 </body>
 </html>

@@ -48,7 +48,7 @@
 <body>
    <img src="../kepek/logo.png" id="logo" style="width: 600px;" title="Logo">
 
-    <?php include_once "php/menu.php"; ?>
+    <?php include_once "php/template/menu.php"; ?>
 
     <!--Daredevil leírás-->
     <div class="oldalDiv" style="background-color: rgb(166, 42, 30);">
@@ -78,7 +78,7 @@
         "I'm Daredevil. Not even God can stop that now."
     </blockquote>
 
-    <?php include_once "php/footer.php"; ?>
+    <?php include_once "php/template/footer.php"; ?>
 
 </body>
 </html>

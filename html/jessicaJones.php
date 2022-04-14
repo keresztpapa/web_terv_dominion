@@ -49,7 +49,7 @@
 <body>
     <img src="../kepek/logo.png" style="width: 600px;" title="Logo">
 
-    <?php include_once "php/menu.php"; ?>
+    <?php include_once "php/template/menu.php"; ?>
 
     <!--Jessica Jones leírás-->
     <div class="oldalDiv" style="background-color: rgb(100, 82, 134);">
@@ -78,7 +78,7 @@
         "I can control myself which means I'm more powerful than you ever were."
     </blockquote>
 
-    <?php include_once "php/footer.php"; ?>
+    <?php include_once "php/template/footer.php"; ?>
 
 </body>
 </html>

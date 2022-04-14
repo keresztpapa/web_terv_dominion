@@ -72,7 +72,7 @@
 <body>
     <img src="../kepek/logo.png" style="width: 600px;" title="Logo">
 
-    <?php include_once "php/menu.php"; ?>
+    <?php include_once "php/template/menu.php"; ?>
 
     <!--Főkép-->
     <img id="fokep" src="../kepek/wallpaper.jpg" alt="főkép helye">
@@ -141,7 +141,7 @@
         </tr>
     </table>
 
-    <?php include_once "php/footer.php"; ?>
+    <?php include_once "php/template/footer.php"; ?>
 
 </body>
 </html>

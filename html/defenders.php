@@ -44,7 +44,7 @@
 <body>
     <img src="../kepek/logo.png" style="width: 600px;" title="Logo">
 
-    <?php include_once "php/menu.php"; ?>
+    <?php include_once "php/template/menu.php"; ?>
 
     <!--Defenders leírás style="width: 217"-->
     <div class="oldalDiv" style="background-color: rgb(134, 180, 169);">
@@ -74,7 +74,7 @@
         "The thing about war is, it only works if both sides believe they're the good guys."
     </blockquote>
 
-    <?php include_once "php/footer.php"; ?>
+    <?php include_once "php/template/footer.php"; ?>
 
 </body>
 </html>

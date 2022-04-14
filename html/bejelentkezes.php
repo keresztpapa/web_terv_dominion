@@ -1,3 +1,24 @@
+<?php
+    include_once "classes/Felhasznalo.php";
+    include_once "common/fuggvenyek.php";
+    session_start();
+    $felhasznalok = adatokBetoltese("data/felhasznalok.txt");
+    $sikeresBejelentkezes = true;
+    if (isset($_POST["login-btn"])) {
+        $felhasznalonev = $_POST["username"];
+        $jelszo = $_POST["password"];
+
+        foreach ($felhasznalok as $felhasznalo) {
+            if ($felhasznalo->getFelhasznalonev() === $felhasznalonev && password_verify($jelszo, $felhasznalo->getJelszo())) {
+                $_SESSION["user"] = $felhasznalo;
+                header("Location: profile.php");
+            }
+        }
+
+        $sikeresBejelentkezes = false;
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="hu">
 <head>
@@ -72,7 +93,7 @@
 <body>
     <img src="../kepek/logo.png" style="width: 600px;" title="Logo">
     
-    <?php include_once "php/menu.php"; ?>
+    <?php include_once "php/template/menu.php"; ?>
 
     <div id="login_box">
         <form method="post">
@@ -93,6 +114,6 @@
 
     <br>
 
-    <?php include_once "php/footer.php"; ?>
+    <?php include_once "php/template/footer.php"; ?>
 </body>
 </html>

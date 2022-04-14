@@ -25,7 +25,7 @@
 [ &#9989; ] iframe + embedded linkelt yt előzetesek
 
 2.mérföldkő<br/>
-[ ] 5 részletes kidolgozott php<br/>
+[ &#9989; ] 5 részletes kidolgozott php<br/>
 [ ] Adattovábbítás HTTP POST-tal<br/>
 [ ] Intuitív inputok, azaz jelzik hol mit kér<br/>
 [ ] GET paraméter<br/>
