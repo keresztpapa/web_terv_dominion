@@ -26,8 +26,8 @@
 
 2.mérföldkő<br/>
 [ &#9989; ] 5 részletes kidolgozott php<br/>
-[ ] Adattovábbítás HTTP POST-tal<br/>
-[ ] Intuitív inputok, azaz jelzik hol mit kér<br/>
+[ &#9989; ] Adattovábbítás HTTP POST-tal<br/>
+[ &#9989; ] Intuitív inputok, azaz jelzik hol mit kér<br/>
 [ ] GET paraméter<br/>
 [ ] OOP<br/>
 [ ] Sütik értelmes használata<br/>

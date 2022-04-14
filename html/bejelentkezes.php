@@ -1,21 +1,32 @@
 <?php
-    include_once "classes/Felhasznalo.php";
-    include_once "common/fuggvenyek.php";
+    include_once "php/UserClass.php";
     session_start();
-    $felhasznalok = adatokBetoltese("data/felhasznalok.txt");
-    $sikeresBejelentkezes = true;
-    if (isset($_POST["login-btn"])) {
+
+    $file = fopen(data/hipertitkosformatum.txt, "rw");
+    $adatok = [];
+
+    if (!$file) {
+        die("Typo");
+    }
+
+    while (($sor = fgets($file)) !== false) {
+        $adat = unserialize($sor);
+        $adatok[] = $adat;
+    }
+
+    fclose($file);
+
+
+    if (isset($_POST["Submit"])) {
         $felhasznalonev = $_POST["username"];
         $jelszo = $_POST["password"];
 
         foreach ($felhasznalok as $felhasznalo) {
             if ($felhasznalo->getFelhasznalonev() === $felhasznalonev && password_verify($jelszo, $felhasznalo->getJelszo())) {
                 $_SESSION["user"] = $felhasznalo;
-                header("Location: profile.php");
             }
         }
 
-        $sikeresBejelentkezes = false;
     }
 ?>
 
