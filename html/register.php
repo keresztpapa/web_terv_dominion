@@ -190,7 +190,8 @@
             <label for="passwordAgain">Password Again</label><br>
             <input type="password" id="passwordAgain" size="30"><br>
             
-            <input type="submit" value="SubmitReg" ><br>
+            <input type="submit" value="Submit" ><br>
+            
             <input type="reset" value="Reset"><br>
         </form>
     </div>
