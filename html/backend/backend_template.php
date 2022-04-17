@@ -96,7 +96,6 @@ if (isset($_POST["SubmitReg"])) {
   }
 }
 
-
-
 fclose($text);
+
 ?>
