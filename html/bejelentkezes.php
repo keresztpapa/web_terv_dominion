@@ -1,8 +1,8 @@
 <?php
-    include_once "php/UserClass.php";
+    include_once "UserClass.php";
     session_start();
 
-    $file = fopen("data/hipertitkosformatum.txt", "rw");
+    $file = fopen("../data/hipertitkosformatum.txt", "rw");
     $adatok = [];
 
     if (!$file) {
