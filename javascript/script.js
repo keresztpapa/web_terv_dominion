@@ -1,10 +1,8 @@
   function ratingStar(event){
-    
     var checkValue = document.querySelectorAll("input");
     var checkStar = document.querySelectorAll("label");
     var checkSmiley = document.querySelectorAll("i");
     var checkCount = 0;
-
     for(var i=0; i<checkValue.length; i++){
         if(checkValue[i]==event.target){
             checkCount = i+1;

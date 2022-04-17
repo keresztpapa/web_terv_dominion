@@ -9,37 +9,34 @@
     <title>Marvel X Netflix</title>
 
     <style>
-        .container{
-            width:1170px;
-            margin:20px auto;
-            text-align:center;
+        ul {
+            list-style-type: none;
+            text-align: center;
+            overflow: hidden;
+            background-color: rgb(12, 150, 18);
+            width: auto;
+            float: left;
+            position: absolute;
+            border-radius: 25px;
         }
-        input[type="checkbox"]{
-            width:100%;
-            height:100%;
-            opacity:0;
-            cursor:pointer;	
+        
+        li a {
+            display: block;
+            color: #000000;
+            padding-bottom: 16px;
+            text-decoration: none;
+            font-size: 17px;
         }
-        label{
-            position:relative;
-            width: 50px;
-            height: 50px;
-            display: inline-block;	
+        
+        li a:hover {
+            background-color: rgb(40, 150, 40);
+            color: black;
+            border-radius:25px; 
         }
-        .check::before, .rated::after{
-            content:'\2605';
-            font-size:60px;
-            position:absolute;
-            color:#777;
-            left:0;
-            bottom:0;
-            line-height: 50px;	
-        }
-        .rated::after{
-            color:orange;
-        }
-        .check:hover::before{
-            color:orange;
+        
+        li a.active {
+            background-color: #aa040456;
+            color: white;
         }
     </style>
 
@@ -58,12 +55,13 @@
             <p><strong>Szereplők:</strong> Finn Jones, Jessica Henwick, Tom Pelphrey, Jessica Stroup, Sacha Dhawan</p>
             <p><strong>Évadok száma:</strong> 2</p>
             <p><strong>Értékelés:</strong></p>
-            <h1>Rating Stars</h1>
-                <label for="r1" class="check"><input type="checkbox" id="r1" onchange="ratingStar(event)"/><i class="em em-weary"></i></label>
-                <label for="r2" class="check"><input type="checkbox" id="r2" onchange="ratingStar(event)"/><i class="em em-worried"></i></label>
-                <label for="r3" class="check"><input type="checkbox" id="r3" onchange="ratingStar(event)"/><i class="em em-blush"></i></label>
-                <label for="r4" class="check"><input type="checkbox" id="r4" onchange="ratingStar(event)"/><i class="em em-smiley"></i></label>
-                <label for="r5" class="check"><input type="checkbox" id="r5" onchange="ratingStar(event)"/><i class="em em-sunglasses"></i></label>
+            <ol class="rating">
+                <li class="rating-item" data-rate="1"></li>
+                <li class="rating-item active" data-rate="2"></li>
+                <li class="rating-item" data-rate="3"></li>
+                <li class="rating-item" data-rate="4"></li>
+                <li class="rating-item" data-rate="5"></li>
+            </ol>  
         </div>
         <p class="leiras">A Vasököl (eredeti cím: Iron Fist) 2017 és 2018 között vetített amerikai akció dráma sorozat, amelyet Scott Buck alkotott. A sorozat producere Evan Perazzo. A zeneszerzője az első évadban Trevor Morris, a második évadban Robert Lydecker. A sorozat a <em>Marvel Television</em>, az <em>ABC Stúdió</em> és a <em>Devilina Productions</em> megbízásából készült, forgalmazója a Netflix Streaming Services. Amerikában 2017. március 17-én mutatta be a Netflix. Magyarországon csak feliratosan elérhető.</p>
     </div>
