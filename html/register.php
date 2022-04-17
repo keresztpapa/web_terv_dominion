@@ -61,7 +61,7 @@
         if (count($hibak) === 0) {
             $jelszo = password_hash($jelszo, PASSWORD_DEFAULT);
             $fiokok[] = ["usernameReg" => $felhasznalonev, "passwordReg" => $jelszo];
-            saveUser("users.txt", $fiokok, $felhasznalonev, $jelszo);
+            saveUser("data/hipertitkosformatum.txt", $fiokok, $felhasznalonev, $jelszo);
             $siker = TRUE;
         } else {
             $siker = FALSE;
