@@ -116,7 +116,7 @@
             <br><br>
             
             <label for="password">Password</label><br>
-            <input type="password" id="password" size="30" value="<?php if (isset($_POST['passwordReg'])) echo $_POST['passwordReg']; ?>"/>><br>
+            <input type="password" id="password" size="30" value="<?php if (isset($_POST['passwordReg'])) echo $_POST['passwordReg']; ?>"/><br>
             
             <input type="submit" value="Submit"><br>
             <input type="reset" value="Reset"><br>
