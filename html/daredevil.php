@@ -50,6 +50,16 @@
 
     <?php include_once "template/menu.php"; ?>
 
+    <script> 
+        if (sessionStorage.getItem('status') != null){
+            //redirect to page
+            alert("Is Login : True");
+        }else{
+            //show validation message
+            alert("Is Login : False");
+        } 
+    </script>
+
     <!--Daredevil leírás-->
     <div class="oldalDiv" style="background-color: rgb(166, 42, 30);">
         <img src="../kepek/daredevil.jpg" style="width: 20%;" alt="Daredevil">

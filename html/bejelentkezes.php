@@ -32,7 +32,7 @@
     //Regisztracio
 
     $hibak = [];
-    $fiokok = loadUsers("users.txt");
+    $fiokok = loadUsers("../data/hipertitkosformatum.txt");
 
     if (isset($_POST["SubmitReg"])) {
         if (!isset($_POST["usernameReg"]) || trim($_POST["usernameReg"]) === ""){
@@ -144,6 +144,18 @@
 
 </head>
 <body>
+
+    <script> 
+        if (sessionStorage.getItem('status') != null){
+            //redirect to page
+            alert("Is Login : True");
+        }else{
+            //show validation message
+            alert("Is Login : False");
+        } 
+    </script>
+
+
     <img src="../kepek/logo.png" style="width: 600px;" title="Logo">
     <?php include_once "template/menu.php"; ?>
 
