@@ -31,7 +31,7 @@
 
     $text = fopen("data/hipertitkosformatum.txt", "r") or die("Unable to open file!");
     
-    $fiokok = fread($text,filesize("data/hipertitkosformatum.txt"));
+    //$fiokok = fread($text,filesize("data/hipertitkosformatum.txt"));
     
 
     if (isset($_POST["SubmitReg"])) {
@@ -47,12 +47,12 @@
         $jelszo = $_POST["passwordReg"];
         $jelszo2 = $_POST["passwordAgain"];
 
-
+/*
         foreach ($fiokok as $fiok) {
         if ($fiok["usernameReg"] === $felhasznalonev)
             $hibak[] = "A felhasználónév már foglalt!";
         }
-
+*/
         if (strlen($jelszo) < 8)
             $hibak[] = "A jelszónak legalább 8 karakter hosszúnak kell lennie!";
 
@@ -63,8 +63,8 @@
             $jelszo = password_hash($jelszo, PASSWORD_DEFAULT);
             $fiokok[] = ["usernameReg" => $felhasznalonev, "passwordReg" => $jelszo];
 
-            saveUser("data/hipertitkosformatum.txt", $fiokok, $felhasznalonev, $jelszo);
-
+            saveUser("data/hipertitkosformatum.txt", $felhasznalonev, $jelszo);
+                                                    //$fiokok
             $siker = TRUE;
         } else {
             $siker = FALSE;
