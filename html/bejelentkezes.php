@@ -38,18 +38,18 @@
         if (!isset($_POST["usernameReg"]) || trim($_POST["usernameReg"]) === ""){
             $hibak[] = "A felhasználónév megadása kötelező!";
         }
-            
+
 
         if (!isset($_POST["passwordReg"]) || trim($_POST["passwordReg"]) === "" || !isset($_POST["passwordAgain"]) || trim($_POST["passwordAgain"]) === ""){
             $hibak[] = "A jelszó és az ellenőrző jelszó megadása kötelező!";
         }
-            
+
 
         $felhasznalonev = $_POST["usernameReg"];
         $jelszo = $_POST["passwordReg"];
         $jelszo2 = $_POST["passwordAgain"];
 
-        
+
         foreach ($fiokok as $fiok) {
         if ($fiok["usernameReg"] === $felhasznalonev)
             $hibak[] = "A felhasználónév már foglalt!";
@@ -98,7 +98,7 @@
             position: sticky;
             top: 0;
             left: 12.5%;
-            
+
             padding: 1% 5%;
 
             overflow: auto;
@@ -145,8 +145,8 @@
 </head>
 <body>
     <img src="../kepek/logo.png" style="width: 600px;" title="Logo">
-    
-    <?php include_once "php/template/menu.php"; ?>
+
+    <?php include_once "template/menu.php"; ?>
 
     <div id="login_box">
         <form method="post">
@@ -158,7 +158,7 @@
             <input type="password" id="password" size="30"><br>
             <input type="submit" value="Submit"><br>
             <input type="reset" value="Reset"><br>
-        
+
             <label id="hardmode">Hard-mode</label><br>
             <button class="button" onclick="crack()">Click me</button>
         </form>
@@ -182,6 +182,6 @@
 
     <br>
 
-    <?php include_once "php/template/footer.php"; ?>
+    <?php include_once "template/footer.php"; ?>
 </body>
-</html>
+</html> 

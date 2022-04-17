@@ -44,7 +44,7 @@
 <body>
     <img src="../kepek/logo.png" style="width: 600px;" title="Logo">
 
-    <?php include_once "php/template/menu.php"; ?>
+    <?php include_once "template/menu.php"; ?>
 
     <!--Punisher leírás-->
     <div class="oldalDiv" style="background-color: rgb(107, 109, 108);">
@@ -75,7 +75,7 @@
     </blockquote>
 
  
-    <?php include_once "php/template/footer.php"; ?>
+    <?php include_once "template/footer.php"; ?>
     
 </body>
 </html>
