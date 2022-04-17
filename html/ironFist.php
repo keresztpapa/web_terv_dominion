@@ -4,40 +4,64 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/design.css">
+    
     <link rel="icon" href="../kepek/icon.png">
     <title>Marvel X Netflix</title>
 
     <style>
-        ul {
-            list-style-type: none;
-            text-align: center;
-            overflow: hidden;
-            background-color: rgb(12, 150, 18);;
-            width: auto;
-            float: left;
-            position: absolute;
-            border-radius: 25px;
-        }
-        
-        li a {
-            display: block;
-            color: #000000;
-            padding-bottom: 16px;
-            text-decoration: none;
-            font-size: 17px;
-        }
-        
-        li a:hover {
-            background-color: rgb(82, 6, 6);
-            color: black;
-            border-radius:25px; 
-        }
-        
-        li a.active {
-            background-color: #aa040456;
-            color: white;
-        }
+*{margin:0;padding:0;}
+body{
+	background:#f1f1f1;
+	font-size:20px;
+}
+.container{
+	width:1170px;
+	margin:20px auto;
+	text-align:center;
+}
+h1{
+	font-family: 'Playfair Display', serif;
+	font-size: 5em;
+    color: #9e9ba4;
+    text-transform: capitalize;
+    margin-bottom: 50px;
+}
+input[type="checkbox"]{
+	width:100%;
+	height:100%;
+	opacity:0;
+	cursor:pointer;	
+}
+label{
+	position:relative;
+	width: 50px;
+    height: 50px;
+    display: inline-block;	
+}
+.check::before, .rated::after{
+	content:'\2605';
+	font-size:60px;
+	position:absolute;
+	color:#777;
+	left:0;
+	bottom:0;
+    line-height: 50px;	
+}
+.rated::after{
+	color:orange;
+}
+.check:hover::before{
+	color:orange;
+}
+label i{
+	position:absolute;
+
+	font-size:35px;
+}
+label i.em{
+	display:none;	
+}
+
     </style>
 
 </head>
