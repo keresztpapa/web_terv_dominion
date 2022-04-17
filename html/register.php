@@ -105,9 +105,8 @@
 
     <?php
         if (isset($siker) && $siker === TRUE) {
-            echo "<p>Sikeres regisztráció!</p>";
+            alert("Sikeres regisztráció!");
         }
-    
     ?>
 
     <div id="cetli">A mezők kitöltése kötelező!</div>

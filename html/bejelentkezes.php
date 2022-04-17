@@ -131,6 +131,12 @@
 
     <div id="cetli">A mezők kitöltése kötelező!</div>
 
+    <?php
+        if (!isset($siker) || $siker !== TRUE) {  
+            alert("Nem mész be");
+        } 
+    ?>
+
     <br>
 
     <?php include_once "template/footer.php"; ?>
