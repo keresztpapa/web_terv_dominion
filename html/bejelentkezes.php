@@ -28,6 +28,48 @@
         }
 
     }
+
+    //Regisztracio
+
+    $hibak = [];
+    $fiokok = loadUsers("users.txt");
+
+    if (isset($_POST["SubmitReg"])) {
+        if (!isset($_POST["usernameReg"]) || trim($_POST["usernameReg"]) === ""){
+            $hibak[] = "A felhasználónév megadása kötelező!";
+        }
+            
+
+        if (!isset($_POST["passwordReg"]) || trim($_POST["passwordReg"]) === "" || !isset($_POST["passwordAgain"]) || trim($_POST["passwordAgain"]) === ""){
+            $hibak[] = "A jelszó és az ellenőrző jelszó megadása kötelező!";
+        }
+            
+
+        $felhasznalonev = $_POST["usernameReg"];
+        $jelszo = $_POST["passwordReg"];
+        $jelszo2 = $_POST["passwordAgain"];
+
+        
+        foreach ($fiokok as $fiok) {
+        if ($fiok["usernameReg"] === $felhasznalonev)
+            $hibak[] = "A felhasználónév már foglalt!";
+        }
+
+        if (strlen($jelszo) < 8)
+            $hibak[] = "A jelszónak legalább 8 karakter hosszúnak kell lennie!";
+
+        if ($jelszo !== $jelszo2)
+            $hibak[] = "A jelszó és az ellenőrző jelszó nem egyezik!";
+
+        if (count($hibak) === 0) {
+            $jelszo = password_hash($jelszo, PASSWORD_DEFAULT);
+            $fiokok[] = ["usernameReg" => $felhasznalonev, "passwordReg" => $jelszo];
+            saveUsers("users.txt", $fiokok);
+            $siker = TRUE;
+        } else {
+            $siker = FALSE;
+        }
+    }
 ?>
 
 <!DOCTYPE html>
@@ -108,6 +150,7 @@
 
     <div id="login_box">
         <form method="post">
+            <label for="log"><strong>Bejelentkezés</strong></label><br>
             <label for="username">Username</label><br>
             <input type="text" id="username" size="30"><br><br>
 
@@ -118,6 +161,20 @@
         
             <label id="hardmode">Hard-mode</label><br>
             <button class="button" onclick="crack()">Click me</button>
+        </form>
+    </div>
+
+    <div id="reg_box">
+        <form method="post">
+            <label for="reg"><strong>Regisztráció</strong></label><br>
+            <label for="usernameReg">Username</label><br>
+            <input type="text" id="usernameReg" size="30"><br><br>
+            <label for="passwordReg">Password</label><br>
+            <input type="password" id="passwordReg" size="30"><br>
+            <label for="passwordAgain">Password again</label><br>
+            <input type="password" id="passwordAgain" size="30"><br>
+            <input type="submit" value="Submit" id="SubmitReg"><br>
+            <input type="reset" value="Reset"><br>
         </form>
     </div>
 
