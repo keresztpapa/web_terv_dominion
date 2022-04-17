@@ -2,8 +2,6 @@
     
     session_start();
     $hibak = [];
-    
-    $user = new UserClass;
 
     $fiokok = saveUsers("../data/hipertitkosformatum.txt", $user);
 
