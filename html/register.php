@@ -30,19 +30,18 @@
     $hibak = [];
 
     $text = fopen("data/hipertitkosformatum.txt", "r") or die("Unable to open file!");
+    
     $fiokok = fread($text,filesize("data/hipertitkosformatum.txt"));
-    fclose($text);
+    
 
     if (isset($_POST["SubmitReg"])) {
         if (!isset($_POST["usernameReg"]) || trim($_POST["usernameReg"]) === ""){
             $hibak[] = "A felhasználónév megadása kötelező!";
         }
 
-
         if (!isset($_POST["passwordReg"]) || trim($_POST["passwordReg"]) === "" || !isset($_POST["passwordAgain"]) || trim($_POST["passwordAgain"]) === ""){
             $hibak[] = "A jelszó és az ellenőrző jelszó megadása kötelező!";
         }
-
 
         $felhasznalonev = $_POST["usernameReg"];
         $jelszo = $_POST["passwordReg"];
@@ -71,6 +70,8 @@
             $siker = FALSE;
         }
     }
+    
+    fclose($text);
 
 
     
