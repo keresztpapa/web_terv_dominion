@@ -1,5 +1,5 @@
 <?php
-    require("backend/UserClass.php");
+    
     session_start();
 
     $file = fopen("data/hipertitkosformatum.txt", "rw");
@@ -68,6 +68,35 @@
             $siker = TRUE;
         } else {
             $siker = FALSE;
+        }
+
+    function loadUsers($path) {
+            $users = [];
+        
+            $file = fopen($path, "r");
+            if ($file === FALSE)
+              die("Nem sikerült megnyitni a fajlt!");
+        
+            while (($line = fgets($file)) !== FALSE) {
+              $user = unserialize($line);
+              $users[] = $user;
+            }
+        
+            fclose($file);
+            return $users;
+          }
+        
+    function saveUsers($path, $users) {
+            $file = fopen($path, "a");
+            if ($file === FALSE)
+              die("Nem sikerült megnyitni a fajlt!");
+        
+            foreach($users as $user) {
+              $serialized_user = serialize($user);
+              fwrite($file, $serialized_user . "\n");
+            }
+        
+            fclose($file);
         }
     }
 
@@ -238,3 +267,16 @@
     <?php include_once "template/footer.php"; ?>
 </body>
 </html> 
+© 2022 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
+Loading complete
