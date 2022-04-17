@@ -190,7 +190,7 @@
             <label for="password_2">Password Again</label><br>
             <input type="password" id="password_2" size="30"><br>
             
-            <input type="submit" value="Submit"><br>
+            <input type="submit" value="Submit" onClick="saveUser()"><br>
             <input type="reset" value="Reset"><br>
         </form>
     </div>
