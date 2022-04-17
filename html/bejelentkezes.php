@@ -26,8 +26,15 @@
                 $_SESSION["user"] = $felhasznalo;
             }
         }
-
     }
+
+
+    function logout(){
+        echo "logged out";
+        session_destroy();
+    }
+
+
 ?>
 
 <!DOCTYPE html>
@@ -123,9 +130,14 @@
             <input type="text" id="username" size="30"><br><br>
 
             <label for="password">Password</label><br>
+            
             <input type="password" id="password" size="30"><br>
+            
             <input type="submit" value="Submit"><br>
+            
             <input type="reset" value="Reset"><br>
+            
+            <input type="submit" value="Logout" onClick="logout()"><br>
         </form>
     </div>
 
