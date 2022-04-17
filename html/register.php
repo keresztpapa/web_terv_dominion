@@ -16,7 +16,7 @@
         return $users;
     }
 
-    function saveUser($path) {
+    function saveUser($path, $felhasznalonev, $jelszo) {
         $file = fopen($path, "a");
         if ($file === FALSE) die("Nem sikerült megnyitni a fajlt!");
 
@@ -29,7 +29,7 @@
     session_start();
     $hibak = [];
 
-    $fiokok = saveUser("data/hipertitkosformatum.txt", $user);
+    $fiokok = saveUser("data/hipertitkosformatum.txt");
 
     if (isset($_POST["SubmitReg"])) {
         if (!isset($_POST["usernameReg"]) || trim($_POST["usernameReg"]) === ""){
@@ -61,7 +61,7 @@
         if (count($hibak) === 0) {
             $jelszo = password_hash($jelszo, PASSWORD_DEFAULT);
             $fiokok[] = ["usernameReg" => $felhasznalonev, "passwordReg" => $jelszo];
-            saveUsers("users.txt", $fiokok);
+            saveUser("users.txt", $fiokok, $felhasznalonev, $jelszo);
             $siker = TRUE;
         } else {
             $siker = FALSE;
