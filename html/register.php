@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="hu">
 <head>
@@ -88,15 +89,15 @@
     <div id="login_box">
         <form method="post">
             <label for="username">Username</label><br>
-            <input type="text" id="usernameReg" size="30"><br><br>
+            <input type="text" name="usernameReg" size="30"><br><br>
             
             <label for="password">Password</label><br>
-            <input type="password" id="passwordReg" size="30"><br>
+            <input type="password" name="passwordReg" size="30"><br>
             
             <label for="passwordAgain">Password Again</label><br>
-            <input type="password" id="passwordAgain" size="30"><br>
+            <input type="password" name="passwordAgain" size="30"><br>
             
-            <input type="submit" value="Submit" ><br>
+            <input type="submit" value="Submit" name="register"><br>
             
             <input type="reset" value="Reset"><br>
         </form>
