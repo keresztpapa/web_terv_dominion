@@ -44,7 +44,7 @@
 <body>
     <img src="../kepek/logo.png" style="width: 600px;" title="Logo">
    
-    <?php include_once "php/template/menu.php"; ?>
+    <?php include_once "template/menu.php"; ?>
 
     <!--Iron Fist leírás-->
     <div class="oldalDiv" style="background-color: rgb(12, 150, 18);">
@@ -74,7 +74,7 @@
         "A man fights with his mouth when his fists are lacking."
     </blockquote>
 
-    <?php include_once "php/template/footer.php"; ?>
+    <?php include_once "template/footer.php"; ?>
 
 </body>
 </html>
