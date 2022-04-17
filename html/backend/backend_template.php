@@ -76,27 +76,27 @@ if (isset($_POST["SubmitReg"])) {
 
 
   foreach ($fiokok as $fiok) {
-  if ($fiok["usernameReg"] === $felhasznalonev)
-      $hibak[] = "A felhasználónév már foglalt!";
+    if ($fiok["usernameReg"] === $felhasznalonev) $hibak[] = "A felhasználónév már foglalt!";
   }
 
-  if (strlen($jelszo) < 8)
-      $hibak[] = "A jelszónak legalább 8 karakter hosszúnak kell lennie!";
+  if (strlen($jelszo) < 8) $hibak[] = "A jelszónak legalább 8 karakter hosszúnak kell lennie!";
 
-  if ($jelszo !== $jelszo2)
-      $hibak[] = "A jelszó és az ellenőrző jelszó nem egyezik!";
+  if ($jelszo !== $jelszo2) $hibak[] = "A jelszó és az ellenőrző jelszó nem egyezik!";
 
   if (count($hibak) === 0) {
       $jelszo = password_hash($jelszo, PASSWORD_DEFAULT);
       $fiokok[] = ["usernameReg" => $felhasznalonev, "passwordReg" => $jelszo];
 
       saveUser("data/hipertitkosformatum.txt", $felhasznalonev, $jelszo);
-                                              //$fiokok
+
       $siker = TRUE;
   } else {
       $siker = FALSE;
+      print_r($hibak);
   }
 }
+
+
 
 fclose($text);
 
