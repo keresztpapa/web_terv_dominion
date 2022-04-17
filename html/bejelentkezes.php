@@ -32,7 +32,7 @@
     //Regisztracio
 
     $hibak = [];
-    $fiokok = loadUsers("../data/hipertitkosformatum.txt");
+    $fiokok = loadUsers("data/hipertitkosformatum.txt");
 
     if (isset($_POST["SubmitReg"])) {
         if (!isset($_POST["usernameReg"]) || trim($_POST["usernameReg"]) === ""){
