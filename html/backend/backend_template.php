@@ -21,9 +21,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }*/
   
 $fiokok = [
-  ["felhasznalonev" => "admin", "jelszo" => "admin"],
-  ["felhasznalonev" => "guest", "jelszo" => "guest"],
-  ["felhasznalonev" => "TestUser", "jelszo" => "test"]
+  ["usernameReg" => "admin", "jepasswordReglszo" => "admin"],
+  ["usernameReg" => "guest", "passwordReg" => "guest"],
+  ["usernameReg" => "TestUser", "passwordReg" => "test"]
 ];
 
 
