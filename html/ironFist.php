@@ -55,16 +55,18 @@
             <p><strong>Szereplők:</strong> Finn Jones, Jessica Henwick, Tom Pelphrey, Jessica Stroup, Sacha Dhawan</p>
             <p><strong>Évadok száma:</strong> 2</p>
             <p><strong>Értékelés:</strong></p>
-            <ol class="rating">
-                <li class="rating-item" data-rate="1"></li>
-                <li class="rating-item active" data-rate="2"></li>
-                <li class="rating-item" data-rate="3"></li>
-                <li class="rating-item" data-rate="4"></li>
-                <li class="rating-item" data-rate="5"></li>
-            </ol>  
+            <h1>Rating Stars</h1>
+                <label for="r1" class="check"><input type="checkbox" id="r1" onchange="ratingStar(event)"/><i class="em em-weary"></i></label>
+                <label for="r2" class="check"><input type="checkbox" id="r2" onchange="ratingStar(event)"/><i class="em em-worried"></i></label>
+                <label for="r3" class="check"><input type="checkbox" id="r3" onchange="ratingStar(event)"/><i class="em em-blush"></i></label>
+                <label for="r4" class="check"><input type="checkbox" id="r4" onchange="ratingStar(event)"/><i class="em em-smiley"></i></label>
+                <label for="r5" class="check"><input type="checkbox" id="r5" onchange="ratingStar(event)"/><i class="em em-sunglasses"></i></label>
         </div>
         <p class="leiras">A Vasököl (eredeti cím: Iron Fist) 2017 és 2018 között vetített amerikai akció dráma sorozat, amelyet Scott Buck alkotott. A sorozat producere Evan Perazzo. A zeneszerzője az első évadban Trevor Morris, a második évadban Robert Lydecker. A sorozat a <em>Marvel Television</em>, az <em>ABC Stúdió</em> és a <em>Devilina Productions</em> megbízásából készült, forgalmazója a Netflix Streaming Services. Amerikában 2017. március 17-én mutatta be a Netflix. Magyarországon csak feliratosan elérhető.</p>
     </div>
+
+
+
 
     <!--Videó-->
     <iframe width="1064" height="608" src="https://www.youtube.com/embed/jAy6NJ_D5vU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
