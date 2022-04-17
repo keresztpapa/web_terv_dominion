@@ -1,5 +1,5 @@
 <?php
-    include_once "UserClass.php";
+    include_once "backend/UserClass.php";
     session_start();
 
     $file = fopen("data/hipertitkosformatum.txt", "rw");
