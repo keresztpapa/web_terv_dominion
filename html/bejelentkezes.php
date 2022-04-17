@@ -2,7 +2,7 @@
     include_once "UserClass.php";
     session_start();
 
-    $file = fopen("../data/hipertitkosformatum.txt", "rw");
+    $file = fopen("data/hipertitkosformatum.txt", "rw");
     $adatok = [];
 
     if (!$file) {
