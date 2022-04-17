@@ -2,7 +2,7 @@
     include_once "php/UserClass.php";
     session_start();
 
-    $file = fopen(data/hipertitkosformatum.txt, "rw");
+    $file = fopen("data/hipertitkosformatum.txt", "rw");
     $adatok = [];
 
     if (!$file) {
@@ -145,12 +145,10 @@
 </head>
 <body>
     <img src="../kepek/logo.png" style="width: 600px;" title="Logo">
-
     <?php include_once "template/menu.php"; ?>
 
     <div id="login_box">
         <form method="post">
-            <label for="log"><strong>Bejelentkezés</strong></label><br>
             <label for="username">Username</label><br>
             <input type="text" id="username" size="30"><br><br>
 
@@ -161,20 +159,6 @@
 
             <label id="hardmode">Hard-mode</label><br>
             <button class="button" onclick="crack()">Click me</button>
-        </form>
-    </div>
-
-    <div id="reg_box">
-        <form method="post">
-            <label for="reg"><strong>Regisztráció</strong></label><br>
-            <label for="usernameReg">Username</label><br>
-            <input type="text" id="usernameReg" size="30"><br><br>
-            <label for="passwordReg">Password</label><br>
-            <input type="password" id="passwordReg" size="30"><br>
-            <label for="passwordAgain">Password again</label><br>
-            <input type="password" id="passwordAgain" size="30"><br>
-            <input type="submit" value="Submit" id="SubmitReg"><br>
-            <input type="reset" value="Reset"><br>
         </form>
     </div>
 
