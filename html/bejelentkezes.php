@@ -69,6 +69,7 @@
         } else {
             $siker = FALSE;
         }
+    }
 
     function loadUsers($path) {
             $users = [];
@@ -98,7 +99,7 @@
         
             fclose($file);
         }
-    }
+    
 
 ?>
 
@@ -211,16 +212,3 @@
     <?php include_once "template/footer.php"; ?>
 </body>
 </html> 
-© 2022 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
-Loading complete
