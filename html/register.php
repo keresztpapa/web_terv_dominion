@@ -44,7 +44,7 @@
         }
     }
 
-    function loadUsers($path) {
+        function loadUsers($path) {
             $users = [];
         
             $file = fopen($path, "r");
@@ -58,9 +58,20 @@
         
             fclose($file);
             return $users;
-          }
+        }
         
-    function saveUsers($path, $users) {
+        function saveUser($path) {
+            $file = fopen($path, "a");
+            if ($file === FALSE) die("Nem sikerült megnyitni a fajlt!");
+
+            fwrite($file, $felhasznalonev . "\n");
+            fwrite($file, $jelszo . "\n");
+        
+            fclose($file);
+        }
+    
+    /*
+    function saveUser($path, $users) {
             $file = fopen($path, "a");
             if ($file === FALSE)
               die("Nem sikerült megnyitni a fajlt!");
@@ -72,7 +83,7 @@
         
             fclose($file);
         }
-    
+    */
 
 ?>
 
