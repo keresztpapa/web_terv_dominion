@@ -25,6 +25,7 @@ class User{
       $this->passwd = $asd; 
   }
 
+  /*
   public function loadUsers($path) {
     $users = [];
 
@@ -52,6 +53,7 @@ class User{
     }
 
     fclose($file);
-  }
+  }*/
+
 }
 ?>
