@@ -104,13 +104,10 @@
     </div>
 
     <?php
-        if (isset($siker) && $siker === TRUE) {  // ha nem volt hiba, akkor a regisztráció sikeres
+        if (isset($siker) && $siker === TRUE) {
             echo "<p>Sikeres regisztráció!</p>";
-        } else {                                // az esetleges hibákat kiírjuk egy-egy bekezdésben
-            foreach ($hibak as $hiba) {
-            echo "<p>" . $hiba . "</p>";
         }
-    }
+    
     ?>
 
     <div id="cetli">A mezők kitöltése kötelező!</div>

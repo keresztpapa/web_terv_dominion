@@ -109,18 +109,6 @@
 
 </head>
 <body>
-
-    <script> 
-        if (sessionStorage.getItem('status') != null){
-            //redirect to page
-            alert("Is Login : True");
-        }else{
-            //show validation message
-            alert("Is Login : False");
-        } 
-    </script>
-
-
     <img src="../kepek/logo.png" style="width: 600px;" title="Logo">
     <?php include_once "template/menu.php"; ?>
 
