@@ -1,5 +1,31 @@
 <?php
-    
+
+    function loadUsers($path) {
+        $users = [];
+
+        $file = fopen($path, "r");
+        if ($file === FALSE)
+            die("Nem sikerült megnyitni a fajlt!");
+
+        while (($line = fgets($file)) !== FALSE) {
+            $user = unserialize($line);
+            $users[] = $user;
+        }
+
+        fclose($file);
+        return $users;
+    }
+
+    function saveUser($path) {
+        $file = fopen($path, "a");
+        if ($file === FALSE) die("Nem sikerült megnyitni a fajlt!");
+
+        fwrite($file, $felhasznalonev . "\n");
+        fwrite($file, $jelszo . "\n");
+
+        fclose($file);
+    }
+
     session_start();
     $hibak = [];
 
@@ -42,31 +68,7 @@
         }
     }
 
-        function loadUsers($path) {
-            $users = [];
-        
-            $file = fopen($path, "r");
-            if ($file === FALSE)
-              die("Nem sikerült megnyitni a fajlt!");
-        
-            while (($line = fgets($file)) !== FALSE) {
-              $user = unserialize($line);
-              $users[] = $user;
-            }
-        
-            fclose($file);
-            return $users;
-        }
-        
-        function saveUser($path) {
-            $file = fopen($path, "a");
-            if ($file === FALSE) die("Nem sikerült megnyitni a fajlt!");
 
-            fwrite($file, $felhasznalonev . "\n");
-            fwrite($file, $jelszo . "\n");
-        
-            fclose($file);
-        }
     
     /*
     function saveUser($path, $users) {
