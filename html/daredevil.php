@@ -50,16 +50,6 @@
 
     <?php include_once "template/menu.php"; ?>
 
-    <script> 
-        if (sessionStorage.getItem('status') != null){
-            //redirect to page
-            alert("Is Login : True");
-        }else{
-            //show validation message
-            alert("Is Login : False");
-        } 
-    </script>
-
     <!--Daredevil leírás-->
     <div class="oldalDiv" style="background-color: rgb(166, 42, 30);">
         <img src="../kepek/daredevil.jpg" style="width: 20%;" alt="Daredevil">
@@ -75,7 +65,27 @@
                 <li class="rating-item" data-rate="3"></li>
                 <li class="rating-item" data-rate="4"></li>
                 <li class="rating-item" data-rate="5"></li>
-            </ol>            
+            </ol>           
+            <script> 
+                if (sessionStorage.getItem('status') != null){
+
+                    const rate = document.querySelector('.rating');
+                    const items = rate.querySelectorAll('.rating-item');
+                    rate.onclick = e => {
+                        const elClass = e.target.classList;
+                            if (!elClass.contains('active')) {
+                            items.forEach( 
+                                item => item.classList.remove('active')
+                            );
+                            console.log(e.target.getAttribute("data-rate"));
+                            elClass.add('active'); 
+                        }
+                    };       
+                
+                }else{
+                    alert("Is Login : False");
+                } 
+            </script> 
         </div>
         <p class="leiras">A Marvel's Daredevil vagy röviden Daredevil 2015-ben indult amerikai webes televízió sorozat, melyet Drew Goddard alkotott meg a Netflixnek a <a href="https://hu.wikipedia.org/wiki/Marvel-moziuniverzum" target="_blank">Marvel-moziuniverzum</a> részeként. A sorozat a <em>Marvel Comics</em> képregények Daredevil, magyarul Fenegyerek nevű szereplőjének történetét dolgozza fel. Magyarországon a sorozat 2019. augusztus 31-én jelent meg magyar szinkronnal. Televízióban az M2 Petőfi TV mutatta be új szinkronnal 2021. január 5-én.</p>
     </div>

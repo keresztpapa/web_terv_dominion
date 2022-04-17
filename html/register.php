@@ -29,7 +29,9 @@
     session_start();
     $hibak = [];
 
-    $fiokok = saveUser("data/hipertitkosformatum.txt");
+    $text = fopen("data/hipertitkosformatum.txt", "r") or die("Unable to open file!");
+    $fiokok = fread($text,filesize("data/hipertitkosformatum.txt"));
+    fclose($text);
 
     if (isset($_POST["SubmitReg"])) {
         if (!isset($_POST["usernameReg"]) || trim($_POST["usernameReg"]) === ""){
@@ -61,7 +63,9 @@
         if (count($hibak) === 0) {
             $jelszo = password_hash($jelszo, PASSWORD_DEFAULT);
             $fiokok[] = ["usernameReg" => $felhasznalonev, "passwordReg" => $jelszo];
+
             saveUser("data/hipertitkosformatum.txt", $fiokok, $felhasznalonev, $jelszo);
+
             $siker = TRUE;
         } else {
             $siker = FALSE;
