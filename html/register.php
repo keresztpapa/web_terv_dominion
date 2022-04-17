@@ -182,15 +182,15 @@
     <div id="login_box">
         <form method="post">
             <label for="username">Username</label><br>
-            <input type="text" id="username" size="30"><br><br>
+            <input type="text" id="usernameReg" size="30"><br><br>
             
             <label for="password">Password</label><br>
-            <input type="password" id="password" size="30"><br>
+            <input type="password" id="passwordReg" size="30"><br>
             
-            <label for="password_2">Password Again</label><br>
-            <input type="password" id="password_2" size="30"><br>
+            <label for="passwordAgain">Password Again</label><br>
+            <input type="password" id="passwordAgain" size="30"><br>
             
-            <input type="submit" value="Submit" onClick="saveUser()"><br>
+            <input type="submit" value="SubmitReg" ><br>
             <input type="reset" value="Reset"><br>
         </form>
     </div>
