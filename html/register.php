@@ -29,7 +29,7 @@
     session_start();
     $hibak = [];
 
-    $fiokok = saveUsers("../data/hipertitkosformatum.txt", $user);
+    $fiokok = saveUser("../data/hipertitkosformatum.txt", $user);
 
     if (isset($_POST["SubmitReg"])) {
         if (!isset($_POST["usernameReg"]) || trim($_POST["usernameReg"]) === ""){
