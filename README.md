@@ -30,16 +30,16 @@
 [ &#9989; ] Intuitív inputok, azaz jelzik hol mit kér<br/>
 [ ] GET paraméter<br/>
 [ ] OOP<br/>
-[ &#9989; ] Sütik értelmes használata<br/>
+[ ] Sütik értelmes használata<br/>
 [ &#9989; ] Regisztráció-->adatok tárolása<br/>
 [ ] Űrlapmező kitöltés szerveroldalon ellenőrizni<br/>
 [ &#9989; ] Kezelje ha van foglalt f.h.név vagy e-mail<br/>
 [ &#9989; ] Jelszót 2szer beírni<br/>
 [ &#9989; ] Rosszul kitöltött/ nem kitöltött mezőkre figyelmeztessen<br/>
 [ &#9989; ] Jelszavak biztonnságos tárolása<br/>
-[ &#9989; ] Bejelentkezés az oldalra<br/>
+[ ] Bejelentkezés az oldalra<br/>
 [ ] Bejelentkezett f.h.-k lássanak bizonyos oldalakat<br/>
-[ &#9989; ] Kijelentkezés<br/>
+[ ] Kijelentkezés<br/>
 [ ] f.h-k módosíthatnak adatot (sajátot)<br/>
 [ ] Profilkép feltöltés<br/>
 [ ] F.h.-i fiók törlése<br/>
