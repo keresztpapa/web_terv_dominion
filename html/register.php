@@ -1,5 +1,5 @@
 <?php
-    include "template/fajlBeKi.php";
+    include "backend/fajlBeKi.php";
     $fiokok=loadUsers();
 
     $hibak = [];
@@ -16,8 +16,7 @@
         $felhasznalonev = $_POST["usernameReg"];
         $jelszo = $_POST["passwordReg"];
         $jelszo2 = $_POST["passwordAgain"];
-    
-    
+
         foreach ($fiokok as $fiok) {
             if ($fiok["usernameReg"] === $felhasznalonev){
                 $hibak[] = "A felhasználónév már foglalt!";
@@ -40,6 +39,10 @@
         } else {
             $siker = FALSE;
             print_r($hibak);
+        }
+
+        if ($siker === TRUE) {
+            echo '<script>alert("Sikeres Regisztráció")</script>';
         }
     }
 ?>
@@ -137,9 +140,7 @@
     </div>
 
     <?php
-        if (isset($siker) && $siker === TRUE) {
-            echo '<script>alert("Sikeres Regisztráció")</script>';
-        }
+
     ?>
 
     <div id="cetli">A mezők kitöltése kötelező!</div>
