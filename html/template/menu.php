@@ -12,8 +12,6 @@
         <li><a href="felhasznalo.php">Fiók</a></li>
 </ul>
 
-<div id="user_sync">
-    echo "asd";
-</div>
+
 
 
