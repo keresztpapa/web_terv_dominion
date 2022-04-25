@@ -277,6 +277,14 @@ img[title="Logo"]{
     animation: kepMegjelenik 10s;
 }
 
+#user_sync{
+    position: absolute;
+    top: 0%;
+    right: 100%;
+    width: 100px;
+    height: 100px;
+    background-color: aliceblue;
+}
 
 /*
             background-color: rgb(136, 0, 21);
