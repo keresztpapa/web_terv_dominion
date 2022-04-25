@@ -109,9 +109,9 @@
 <body>
     <img src="../kepek/logo.png" style="width: 600px;" title="Logo">
     <?php include_once "template/menu.php"; ?>
+    <?php include_once "template/userState.php";?>
     
     <div id="login_box">
-        <?php include_once "template/userState.php";?>
         <form method="post">
             <label for="username">Username</label><br>
             <input type="text" id="username" size="30" value="<?php if (isset($_POST['usernameReg'])) echo $_POST['usernameReg']; ?>"/>
@@ -122,9 +122,6 @@
             
             <input type="submit" value="Submit"><br>
             <input type="reset" value="Reset"><br>
-            
-            <input type="submit" value="Logout" onclick="logout()"><br>
-
             <script> 
                 if (sessionStorage.getItem('status') != null){   
                     <input type="submit" value="Logout" onClick="logout"><br>
