@@ -44,10 +44,9 @@
 <body>
     <img src="../kepek/logo.png" style="width: 600px;" title="Logo">
     <?php include_once "template/menu.php"; ?>
-
+    <?php include_once "template/userState.php";?>
     <!--Iron Fist leírás-->
     <div class="oldalDiv" style="background-color: rgb(12, 150, 18);">
-        <?php include_once "template/userState.php";?>
         <img src="../kepek/ironFist.jpg" style="width: 20%;" alt="Iron Fist">
         <div class="infok">
             <h2>Iron Fist (2017-2018)</h2>
