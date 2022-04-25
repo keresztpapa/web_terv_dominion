@@ -1,32 +1,5 @@
 <?php
     session_start();
-/*
-    $file = fopen("data/hipertitkosformatum.txt", "rw");
-    $adatok = [];
-
-    if (!$file) {
-        die("Typo");
-    }
-
-    while (($sor = fgets($file)) !== false) {
-        $adat = unserialize($sor);
-        $adatok[] = $adat;
-    }
-
-    fclose($file);
-
-
-    if (isset($_POST["Submit"])) {
-        $felhasznalonev = $_POST["username"];
-        $jelszo = $_POST["password"];
-
-        foreach ($felhasznalok as $felhasznalo) {
-            if ($felhasznalo->getFelhasznalonev() === $felhasznalonev && password_verify($jelszo, $felhasznalo->getJelszo())) {
-                $_SESSION["user"] = $felhasznalo;
-            }
-        }
-    }
-*/
     function logout(){
         echo "logged out";
         session_unset();

@@ -1,3 +1,11 @@
 <div id="user_sync">
-    USER MATRICA
+    <?php 
+    
+    if($_SESSION["user"]->getFelhasznalonev() != null){
+        echo $_SESSION["user"]->getFelhasznalonev();
+    } else {
+        echo "Anonymus";
+    }
+    
+    ?>
 </div>
