@@ -8,6 +8,21 @@
         header("Location:: bejelentkezes.php");
     }
 
+    define("DEF_PIC", "/kepek/mosomedve.jpg");
+    $profilkep = DEF_PIC;
+
+    $path = "kepek/" . $_SESSION["user"]->getFelhasznalonev();
+    $extensions = ["jpg","png"];
+    foreach ($extensions as $ex){
+        if(file_exists("$path.$ex")){
+            $profilkep = "$utvonal.$kit";
+        }
+    }
+
+    $err = [];
+
+
+
 ?>
 
 <!DOCTYPE html>
@@ -85,6 +100,48 @@
     <img src="../kepek/logo.png" style="width: 600px;" title="Logo">
     <?php include_once "template/menu.php"; ?>
 
+    <?php
+        if (count($hibak) > 0) {
+            echo "<div class='errors'>";
+            foreach ($hibak as $hiba) {
+                echo "<p>" . $hiba . "</p>";
+            }
+            echo "</div>";
+        }
+        $user = $_SESSION["user"];
+    ?>
+
+    
+        <table id="profile-table">
+            <tr>
+                <th colspan="2">Felhasználói adatok</th>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <img src="<?php echo $profilkep; ?>" alt="Profilkép" height="200">
+                    <form action="felhasznalo.php" method="POST" enctype="multipart/form-data">
+                        <input type="file" name="profile-picture">
+                        <input type="submit" name="upload-btn" value="Profilkép módosítása">
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <th>Felhasználónév</th>
+                <td><?php echo $user->getFelhasznalonev(); ?></td>
+            </tr>
+            <tr>
+                <th>E-mail cím</th>
+                <td><?php echo $user->getEmail(); ?></td>
+            </tr>
+            <tr>
+                <th>Születési év</th>
+                <td><?php echo $user->getSzuletesiEv(); ?></td>
+            </tr>
+            <tr>
+                <th>Nem</th>
+                <td><?php echo $user->getNem(); ?></td>
+            </tr>
+        </table>
 
 
     <div id="cetli">A mezők kitöltése kötelező!</div>

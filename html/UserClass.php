@@ -3,6 +3,8 @@
 class User{
   public string $username;
   public string $passwd;  
+  public int $szulDatum;
+  public Sring $nem;
 
   public function __construct(string $usrnm, string $pass){
       $this->username = $usrnm;
@@ -25,35 +27,21 @@ class User{
       $this->passwd = $asd; 
   }
 
-  /*
-  public function loadUsers($path) {
-    $users = [];
-
-    $file = fopen($path, "r");
-    if ($file === FALSE)
-      die("Nem sikerült megnyitni a fajlt!");
-
-    while (($line = fgets($file)) !== FALSE) {
-      $user = unserialize($line);
-      $users[] = $user;
-    }
-
-    fclose($file);
-    return $users;
+  public function getSzul(): int{
+    return $this->$szulDatum;
   }
 
-  public function saveUsers($path, $users) {
-    $file = fopen($path, "a");
-    if ($file === FALSE)
-      die("Nem sikerült megnyitni a fajlt!");
+  public function setSzul(int $asd): void{
+    $this->$szulDatum = $asd;
+  }
 
-    foreach($users as $user) {
-      $serialized_user = serialize($user);
-      fwrite($file, $serialized_user . "\n");
-    }
 
-    fclose($file);
-  }*/
+  public function getNem(): string{
+    return $this->$nem;
+  }
 
+  public function setNem(string $asd): void{
+    $this->$nem = $asd;
+  }
 }
 ?>

@@ -29,6 +29,7 @@
 */
     function logout(){
         echo "logged out";
+        session_unset();
         session_destroy();
     }
 
