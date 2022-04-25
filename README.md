@@ -39,7 +39,7 @@
 [ &#9989; ] Jelszavak biztonnságos tárolása<br/>
 [ ] Bejelentkezés az oldalra<br/>
 [ ] Bejelentkezett f.h.-k lássanak bizonyos oldalakat<br/>
-[ ] Kijelentkezés<br/>
+[ #Tesztelni kell ] Kijelentkezés<br/>
 [ ] f.h-k módosíthatnak adatot (sajátot)<br/>
 [ ] Profilkép feltöltés<br/>
 [ ] F.h.-i fiók törlése<br/>

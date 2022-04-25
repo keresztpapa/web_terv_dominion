@@ -11,3 +11,5 @@
         <li><a href="register.php">Regisztracio</a></li>
         <li><a href="felhasznalo.php">Fiók</a></li>
     </ul>
+
+

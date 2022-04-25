@@ -121,9 +121,11 @@
             <input type="submit" value="Submit"><br>
             <input type="reset" value="Reset"><br>
             
+            <input type="submit" value="Logout" onclick="logout()"><br>
+
             <script> 
                 if (sessionStorage.getItem('status') != null){   
-                    <input type="submit" value="Logout" onClick="logout()"><br>
+                    <input type="submit" value="Logout" onClick="logout"><br>
                 }
             </script> 
         </form>
