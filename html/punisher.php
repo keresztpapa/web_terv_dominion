@@ -45,7 +45,7 @@
     <img src="../kepek/logo.png" style="width: 600px;" title="Logo">
 
     <?php include_once "template/menu.php"; ?>
-
+    <?php include_once "template/userState.php";?>
     <!--Punisher leírás-->
     <div class="oldalDiv" style="background-color: rgb(107, 109, 108);">
         <img src="../kepek/punisher.jpg" style="width: 20%;" alt="Punisher">

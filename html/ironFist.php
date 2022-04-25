@@ -43,7 +43,7 @@
 </head>
 <body>
     <img src="../kepek/logo.png" style="width: 600px;" title="Logo">
-   
+    <?php include_once "template/userState.php";?>
     <?php include_once "template/menu.php"; ?>
 
     <!--Iron Fist leírás-->

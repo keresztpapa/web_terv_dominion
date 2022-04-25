@@ -49,7 +49,7 @@
    <img src="../kepek/logo.png" id="logo" style="width: 600px;" title="Logo">
 
     <?php include_once "template/menu.php"; ?>
-
+    <?php include_once "template/userState.php";?>
     <!--Daredevil leírás-->
     <div class="oldalDiv" style="background-color: rgb(166, 42, 30);">
         <img src="../kepek/daredevil.jpg" style="width: 20%;" alt="Daredevil">
@@ -83,7 +83,7 @@
                     };       
                 
                 }else{
-                    alert("Is Login : False");
+                    //alert("Is Login : False");
                 } 
             </script> 
         </div>

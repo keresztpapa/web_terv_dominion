@@ -50,7 +50,7 @@
     <img src="../kepek/logo.png" style="width: 600px;" title="Logo">
 
     <?php include_once "template/menu.php"; ?>
-
+    <?php include_once "template/userState.php";?>
     <!--Jessica Jones leírás-->
     <div class="oldalDiv" style="background-color: rgb(100, 82, 134);">
         <img src="../kepek/jessicaJones.jpg" style="width: 20%;" alt="Jessica Jones">

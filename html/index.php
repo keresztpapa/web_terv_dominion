@@ -73,7 +73,7 @@
     <img src="../kepek/logo.png" style="width: 600px;" title="Logo">
 
     <?php include_once "template/menu.php"; ?>
-
+    <?php include_once "template/userState.php";?>
     <!--Főkép-->
     <img id="fokep" src="../kepek/wallpaper.jpg" alt="főkép helye">
 

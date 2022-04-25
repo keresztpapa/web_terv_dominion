@@ -99,7 +99,7 @@
 <body>
     <img src="../kepek/logo.png" style="width: 600px;" title="Logo">
     <?php include_once "template/menu.php"; ?>
-
+    <?php include_once "template/userState.php";?>
     <?php
         if (count($hibak) > 0) {
             echo "<div class='errors'>";

@@ -46,7 +46,7 @@
     <img src="../kepek/logo.png" style="width: 600px;" title="Logo">
    
     <?php include_once "template/menu.php"; ?>
-
+    <?php include_once "template/userState.php";?>
     <!--Luke Cage leírás-->
     <div class="oldalDiv" style="background-color: rgb(204, 129, 27);">
         <img src="../kepek/lukeCage.jpg" style="width: 20%;" alt="Luke Cage">

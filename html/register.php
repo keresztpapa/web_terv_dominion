@@ -121,7 +121,7 @@
 <body>
     <img src="../kepek/logo.png" style="width: 600px;" title="Logo">
     <?php include_once "template/menu.php"; ?>
-
+    <?php include_once "template/userState.php";?>
     <div id="login_box">
         <form method="post">
             <label for="username">Username</label><br>
