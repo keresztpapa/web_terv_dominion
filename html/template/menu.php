@@ -13,7 +13,7 @@
 </ul>
 
 <div id="user_sync">
-    
+    echo "asd";
 </div>
 
 
