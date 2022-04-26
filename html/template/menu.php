@@ -1,4 +1,5 @@
  <!--Menüsor-->
+session_start();
  <ul>
         <li><a href="index.php">Főoldal</a></li>
         <li><a href="daredevil.php" id="menupont">Daredevil</a></li>
@@ -11,8 +12,8 @@
         <li><a href="register.php">Regisztracio</a></li>
         
         <?php
-            if(is_user_logged_in()){
-               echo "<li><a href="."felhasznalo.php".">Fiók</a></li>";
+            if($_SESSION["user"]->getName() != ""){
+               echo '"<li><a href="felhasznalo.php">Fiók</a></li>"';
             }
         ?>
 </ul>
