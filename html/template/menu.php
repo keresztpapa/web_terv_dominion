@@ -11,6 +11,7 @@
         <li><a href="register.php">Regisztracio</a></li>
         
         <?php
+            session_start();
             try{   
                if(array_key_exists("userName", $_SESSION)){
                   echo '<li><a href="felhasznalo.php">Fiók</a></li>';
