@@ -88,11 +88,24 @@
     <div id="login_box">
         <form method="post">
             <label for="username">Username</label><br>
-            <input type="text" id="username" size="30" value="<?php if (isset($_POST['usernameReg'])) echo $_POST['usernameReg']; ?>"/>
+            <input type="text" id="username" size="30" value="
+                <?php 
+                    if (isset($_POST['usernameReg'])) {
+                        echo $_POST['usernameReg']; 
+                        $_SESSION["userName"] = $_POST['usernameReg']; 
+                    }
+                ?>"
+            />
             <br><br>
             
             <label for="password">Password</label><br>
-            <input type="password" id="password" size="30" value="<?php if (isset($_POST['passwordReg'])) echo $_POST['passwordReg']; ?>"/><br>
+            <input type="password" id="password" size="30" value="
+                <?php 
+                    if (isset($_POST['passwordReg'])) {
+                        echo $_POST['passwordReg'];
+                        $_SESSION["passwd"] = $_POST['passwordReg'];
+                    } 
+                ?>"/><br>
             
             <input type="submit" value="Submit"><br>
             <input type="reset" value="Reset"><br>

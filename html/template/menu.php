@@ -12,7 +12,7 @@ session_start();
         <li><a href="register.php">Regisztracio</a></li>
         
         <?php
-            if($_SESSION["user"]->getName() != ""){
+            if($_SESSION['userName'] != null){
                echo '"<li><a href="felhasznalo.php">Fiók</a></li>"';
             }
         ?>
