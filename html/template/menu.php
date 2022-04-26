@@ -11,10 +11,13 @@
         <li><a href="register.php">Regisztracio</a></li>
         
         <?php
-            if(array_key_exists("userName", $_SESSION)){
-               echo '<li><a href="felhasznalo.php">Fiók</a></li>';
+            try{   
+               if(array_key_exists("userName", $_SESSION)){
+                  echo '<li><a href="felhasznalo.php">Fiók</a></li>';
+               }
+            }catch (Exception $e){
+               echo "rips";
             }
-
             //if($_SESSION['userName'] != null){
             //   echo '"<li><a href="felhasznalo.php">Fiók</a></li>"';
             //}
