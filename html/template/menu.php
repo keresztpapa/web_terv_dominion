@@ -1,5 +1,5 @@
  <!--Menüsor-->
-session_start();
+ <?php session_start(); ?>
  <ul>
         <li><a href="index.php">Főoldal</a></li>
         <li><a href="daredevil.php" id="menupont">Daredevil</a></li>
