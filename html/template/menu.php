@@ -11,9 +11,13 @@
         <li><a href="register.php">Regisztracio</a></li>
         
         <?php
-            if($_SESSION['userName'] != null){
-               echo '"<li><a href="felhasznalo.php">Fiók</a></li>"';
+            if(array_key_exists("userName", $_SESSION)){
+               echo '<li><a href="felhasznalo.php">Fiók</a></li>';
             }
+
+            //if($_SESSION['userName'] != null){
+            //   echo '"<li><a href="felhasznalo.php">Fiók</a></li>"';
+            //}
         ?>
 </ul>
 
