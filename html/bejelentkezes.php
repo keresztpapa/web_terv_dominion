@@ -1,5 +1,6 @@
 <?php
     session_start();
+    
     function logout(){
         echo "logged out";
         session_unset();
