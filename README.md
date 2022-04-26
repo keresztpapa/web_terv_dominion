@@ -37,11 +37,11 @@
 [ &#9989; ] Jelszót 2szer beírni<br/>
 [ &#9989; ] Rosszul kitöltött/ nem kitöltött mezőkre figyelmeztessen<br/>
 [ &#9989; ] Jelszavak biztonnságos tárolása<br/>
-[ ] Bejelentkezés az oldalra<br/>
-[ ] Bejelentkezett f.h.-k lássanak bizonyos oldalakat<br/>
+[ #Tesztelni kell ] Bejelentkezés az oldalra<br/>
+[ #Tesztelni kell  ] Bejelentkezett f.h.-k lássanak bizonyos oldalakat<br/>
 [ #Tesztelni kell ] Kijelentkezés<br/>
 [ ] f.h-k módosíthatnak adatot (sajátot)<br/>
-[ ] Profilkép feltöltés<br/>
+[ #in progress ] Profilkép feltöltés<br/>
 [ ] F.h.-i fiók törlése<br/>
 [ ] Más f.h. adatainak megtekitése+saját adatok publikussá tétele( vagy nem)<br/>
 [ ] Üzenet küldés<br/>
