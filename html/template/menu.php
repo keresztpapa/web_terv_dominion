@@ -11,19 +11,9 @@
         <li><a href="register.php">Regisztracio</a></li>
         
         <?php
-
-         if (session_status() == PHP_SESSION_NONE) {session_start();}
-            
-            try{   
-               if(array_key_exists("userName", $_SESSION)){
-                  echo '<li><a href="felhasznalo.php">Fiók</a></li>';
-               }
-            }catch (Exception $e){
-               echo "rips";
+            if(array_key_exists("userame", $_SESSION) && $username != ""){
+               echo '<li><a href="felhasznalo.php">Fiók</a></li>';
             }
-            //if($_SESSION['userName'] != null){
-            //   echo '"<li><a href="felhasznalo.php">Fiók</a></li>"';
-            //}
         ?>
 </ul>
 

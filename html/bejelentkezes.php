@@ -116,11 +116,13 @@
             
             
             <input type="reset" value="Reset"><br>
-            <script> 
-                if (sessionStorage.getItem('status') != null){   
-                    <input type="submit" value="Logout" name="logout"><br>
+
+            <?php
+                if(array_key_exists("userame", $_SESSION) && $username != ""){
+                    echo '<input type="submit" value="Logout" name="logout"><br>';
                 }
-            </script> 
+            ?>
+
         </form>
     </div>
 
