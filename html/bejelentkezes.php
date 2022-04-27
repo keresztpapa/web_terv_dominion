@@ -5,23 +5,19 @@
     $fiokok=loadUsers();
     //$checker = true;
 
-    function asd(){
-        //if(isset($_POST['login_btn'])){
-            //if(array_key_exists("username", $_SESSION) && array_key_exists("passwd", $_SESSION)){
-                $username = $_POST['username'];
-                $password = $_POST['passwd'];
+
+    if(isset($_POST['login_btn'])){
             
-                foreach($fiokok as $user){
-                    if($user->getUsername() === $username && password_verify($password, $user->getPassword())){
-                        $_SESSION['user'] = $user;
-                    }
-                }
-                echo '<script>alert("Sikeres Regisztráció")</script>';
-                //$checker = false;
-            //}else{
-            //    echo '<script>alert("A A AA")</script>';
-            //}
-        //}
+        $username = $_POST['username'];
+        $password = $_POST['passwd'];
+    
+        foreach($fiokok as $user){
+            if($user->getUsername() === $username && password_verify($password, $user->getPassword())){
+                $_SESSION['user'] = $user;
+            }
+        }
+        echo '<script>alert("Sikeres login")</script>';
+
     }
 
     function logout(){
@@ -108,28 +104,17 @@
     <?php include_once "template/userState.php";?>
     
     <div id="login_box">
-        <form method="post">
-            <label for="username">Username</label><br>
-            <input type="text" id="username" size="30" name="username" value="
-                <?php 
-                    if (isset($_POST['username'])) {
-                        echo $_POST['username']; 
-                        $_SESSION['username'] = $_POST['username']; 
-                    }
-                ?>"
-            />
+        <form method="post" autocomplete="off">
+            <label for="nev">Username</label><br>
+            <input type="text" id="nev" size="30" name="username" />
             <br><br>
             
-            <label for="password">Password</label><br>
-            <input type="password" id="password" size="30" name ="passwd" value="
-                <?php 
-                    if (isset($_POST['passwd'])) {
-                        echo $_POST['passwd'];
-                        $_SESSION['password'] = $_POST['passwd'];
-                    } 
-                ?>"/><br>
+            <label for="jelsz">Password</label><br>
+            <input type="password" name="password" id="jelsz" size="30" required>
 
-            <input type="submit" value="asd1" name="asd"><br>
+            <input type="submit" name="login-btn" value="Bejelentkezés">
+            
+            
             <input type="reset" value="Reset"><br>
             <script> 
                 if (sessionStorage.getItem('status') != null){   

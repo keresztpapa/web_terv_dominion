@@ -1,5 +1,7 @@
 <?php
     include "backend/fajlBeKi.php";
+    include "UserClass.php";
+    session_start();
     $fiokok=loadUsers();
 
     $hibak = [];
@@ -124,14 +126,14 @@
     <?php include_once "template/userState.php";?>
     <div id="login_box">
         <form method="post">
-            <label for="username">Username</label><br>
-            <input type="text" name="usernameReg" size="30"><br><br>
+            <label for="nev">Username</label><br>
+            <input type="text" name="username" id="nev" size="30" <?php if (isset($_POST["username"])) echo "value='" . $_POST["username"] . "'" ?> ><br><br>
             
-            <label for="password">Password</label><br>
-            <input type="password" name="passwordReg" size="30"><br>
+            <label for="pwd">Password</label><br>
+            <input type="password" name="password" id="pwd" size="30" <?php if (isset($_POST["password"])) echo "value='" . $_POST["username"] . "'" ?> ><br>
             
-            <label for="passwordAgain">Password Again</label><br>
-            <input type="password" name="passwordAgain" size="30"><br>
+            <label for="pwdAgain">Password Again</label><br>
+            <input type="password" name="password2" size="30" id="pwdAgain" <?php if (isset($_POST["password2"])) echo "value='" . $_POST["username"] . "'" ?> ><br>
             
             <input type="submit" value="Submit" name="register"><br>
             
