@@ -1,22 +1,23 @@
 <?php
     session_start();
+    
     include "backend/fajlBeKi.php";
     $fiokok=loadUsers();
     $checker = true;
 
     if(isset($_POST['login_btn'])){
-        $username = $_POST['username'];
-        $password = $_POST['passwd'];
-
-        foreach($fiokok as $user){
-            if($user->getUsername() === $username && password_verify($password, $user->getPassword())){
-                $_SESSION['user'] = $user;
+        if(array_key_exists("username", $_SESSION) && array_key_exists("passwd", $_SESSION)){
+            $username = $_POST['username'];
+            $password = $_POST['passwd'];
+         
+            foreach($fiokok as $user){
+                if($user->getUsername() === $username && password_verify($password, $user->getPassword())){
+                    $_SESSION['user'] = $user;
+                }
             }
+            $checker = false;
         }
-        $checker = false;
     }
-
-
 
     function logout(){
         echo "logged out";
@@ -122,7 +123,7 @@
                         $_SESSION['password'] = $_POST['passwd'];
                     } 
                 ?>"/><br>
-                
+
             <input type="submit" value="Login" name="login_btn"><br>
             <input type="reset" value="Reset"><br>
             <script> 
