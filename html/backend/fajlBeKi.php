@@ -1,6 +1,6 @@
 <?php 
 
-  function loadUsers(string $filename, array $data): array{
+  function loadUsers(string $filename): array{
     $users = [];
 
     $file = fopen($filename, "r");
