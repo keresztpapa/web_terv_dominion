@@ -1,12 +1,28 @@
 <?php
     session_start();
-    
+    include "backend/fajlBeKi.php";
+    $fiokok=loadUsers();
+    $checker = true;
+
+    if(isset($_POST['login_btn'])){
+        $username = $_POST['username'];
+        $password = $_POST['passwd'];
+
+        foreach($fiokok as $user){
+            if($user->getUsername() === $username && password_verify($password, $user->getPassword())){
+                $_SESSION["user"] = $user;
+            }
+        }
+        $checker = false;
+    }
+
+
+
     function logout(){
         echo "logged out";
         session_unset();
         session_destroy();
     }
-
 ?>
 
 <!DOCTYPE html>
@@ -90,9 +106,9 @@
             <label for="username">Username</label><br>
             <input type="text" id="username" size="30" value="
                 <?php 
-                    if (isset($_POST['usernameReg'])) {
-                        echo $_POST['usernameReg']; 
-                        $_SESSION["userName"] = $_POST['usernameReg']; 
+                    if (isset($_POST['username'])) {
+                        echo $_POST['username']; 
+                        $_SESSION['username'] = $_POST['username']; 
                     }
                 ?>"
             />
@@ -101,13 +117,13 @@
             <label for="password">Password</label><br>
             <input type="password" id="password" size="30" value="
                 <?php 
-                    if (isset($_POST['passwordReg'])) {
-                        echo $_POST['passwordReg'];
-                        $_SESSION["passwd"] = $_POST['passwordReg'];
+                    if (isset($_POST['passwd'])) {
+                        echo $_POST['passwd'];
+                        $_SESSION['password'] = $_POST['passwd'];
                     } 
                 ?>"/><br>
             
-            <input type="submit" value="Submit"><br>
+            <input type="submit" value="Login" name="login_btn"><br>
             <input type="reset" value="Reset"><br>
             <script> 
                 if (sessionStorage.getItem('status') != null){   
