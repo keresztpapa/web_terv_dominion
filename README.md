@@ -32,14 +32,14 @@
 [ ] OOP<br/>
 [ ] Sütik értelmes használata<br/>
 [ &#9989; ] Regisztráció-->adatok tárolása<br/>
-[ ] Űrlapmező kitöltés szerveroldalon ellenőrizni<br/>
+[ &#9989; ] Űrlapmező kitöltés szerveroldalon ellenőrizni<br/>
 [ &#9989; ] Kezelje ha van foglalt f.h.név vagy e-mail<br/>
 [ &#9989; ] Jelszót 2szer beírni<br/>
 [ &#9989; ] Rosszul kitöltött/ nem kitöltött mezőkre figyelmeztessen<br/>
 [ &#9989; ] Jelszavak biztonnságos tárolása<br/>
 [ #Tesztelni kell ] Bejelentkezés az oldalra<br/>
 [ #Tesztelni kell  ] Bejelentkezett f.h.-k lássanak bizonyos oldalakat<br/>
-[ #Tesztelni kell ] Kijelentkezés<br/>
+[ ] Kijelentkezés<br/>
 [ ] f.h-k módosíthatnak adatot (sajátot)<br/>
 [ #in progress ] Profilkép feltöltés<br/>
 [ ] F.h.-i fiók törlése<br/>

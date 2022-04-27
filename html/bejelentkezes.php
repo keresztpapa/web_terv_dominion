@@ -1,6 +1,6 @@
 <?php
     session_start();
-    
+    include "UserClass.php";
     include "backend/fajlBeKi.php";
     $fiokok=loadUsers();
     //$checker = true;

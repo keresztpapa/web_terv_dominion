@@ -11,6 +11,10 @@
         <li><a href="register.php">Regisztracio</a></li>
         
         <?php
+            if (session_status() == PHP_SESSION_NONE) {
+               session_start();
+            } 
+            
             if(array_key_exists("userame", $_SESSION) && $username != ""){
                echo '<li><a href="felhasznalo.php">Fiók</a></li>';
             }
