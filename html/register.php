@@ -130,10 +130,10 @@
             <input type="text" name="username" id="nev" size="30" <?php if (isset($_POST["username"])) echo "value='" . $_POST["username"] . "'" ?> ><br><br>
             
             <label for="pwd">Password</label><br>
-            <input type="password" name="password" id="pwd" size="30" <?php if (isset($_POST["password"])) echo "value='" . $_POST["username"] . "'" ?> ><br>
+            <input type="password" name="password" id="pwd" size="30" <?php if (isset($_POST["password"])) echo "value='" . $_POST["password"] . "'" ?> ><br>
             
             <label for="pwdAgain">Password Again</label><br>
-            <input type="password" name="password2" size="30" id="pwdAgain" <?php if (isset($_POST["password2"])) echo "value='" . $_POST["username"] . "'" ?> ><br>
+            <input type="password" name="password2" size="30" id="pwdAgain" <?php if (isset($_POST["password2"])) echo "value='" . $_POST["password2"] . "'" ?> ><br>
             
             <input type="submit" value="Submit" name="register"><br>
             
