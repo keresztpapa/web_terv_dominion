@@ -112,7 +112,7 @@
             <label for="jelsz">Password</label><br>
             <input type="password" name="password" id="jelsz" size="30" required>
 
-            <input type="submit" name="login-btn" value="Bejelentkezés">
+            <input type="submit" name="login_btn" value="Bejelentkezés">
             
             
             <input type="reset" value="Reset"><br>
