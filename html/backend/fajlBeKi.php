@@ -1,9 +1,9 @@
 <?php 
 
-  function loadUsers() {
+  function loadUsers(string $filename, array $data): array{
     $users = [];
 
-    $file = fopen("data/fiokok.txt", "r");
+    $file = fopen($filename, "r");
     if ($file === FALSE)
       die("Nem sikerült megnyitni a fajlt!");
 
@@ -16,8 +16,9 @@
     return $users;
   }
 
-  function saveUsers($users) {
-    $file = fopen("data/fiokok.txt", "w");
+  function saveUsers(string $filename, array $users){
+    //"data/fiokok.txt"
+    $file = fopen($filename, "w");
     if ($file === FALSE){
       die("Nem sikerült megnyitni a fajlt!");
     }

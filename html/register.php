@@ -2,7 +2,7 @@
     include "backend/fajlBeKi.php";
     include "UserClass.php";
     session_start();
-    $fiokok=loadUsers();
+    $fiokok=loadUsers("data/fiokok.txt");
 
     $hibak = [];
   
@@ -37,7 +37,7 @@
             $jelszo = password_hash($jelszo, PASSWORD_DEFAULT);
             $fiokok[] = ["username" => $felhasznalonev, "password" => $jelszo];
             $user = new User($felhasznalonev, $jelszo);
-            saveUsers($fiokok);
+            saveUsers("data/fiokok.txt", $fiokok);
             $siker = TRUE;
         } else {
             $siker = FALSE;

@@ -2,7 +2,7 @@
     session_start();
     include "UserClass.php";
     include "backend/fajlBeKi.php";
-    $fiokok=loadUsers();
+    $fiokok=loadUsers("data/fiokok.txt");
     //$checker = true;
 
 
