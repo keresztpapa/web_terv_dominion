@@ -20,8 +20,8 @@
 
     }
 
-    function logout(){
-        echo "logged out";
+    if(isset($_POST['logout'])){
+        echo '<script>alert("Sikeres login")</script>';
         session_unset();
         session_destroy();
     }
@@ -118,7 +118,7 @@
             <input type="reset" value="Reset"><br>
             <script> 
                 if (sessionStorage.getItem('status') != null){   
-                    <input type="submit" value="Logout" onClick="logout"><br>
+                    <input type="submit" value="Logout" name="logout"><br>
                 }
             </script> 
         </form>
