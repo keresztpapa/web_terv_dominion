@@ -9,7 +9,7 @@
     if(isset($_POST['login_btn'])){
             
         $username = $_POST['username'];
-        $password = $_POST['passwd'];
+        $password = $_POST['password'];
     
         foreach($fiokok as $user){
             if($user->getUsername() === $username && password_verify($password, $user->getPassword())){
