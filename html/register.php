@@ -37,9 +37,9 @@
             $jelszo = password_hash($jelszo, PASSWORD_DEFAULT);
 
             $user = new User($felhasznalonev, $jelszo);
-            //$fiokok[] = $user;
-            //saveUsers("data/fiokok.txt", $fiokok);
-            saveUsers("data/fiokok.txt", $user);
+            $users[] = $user;
+            saveUsers("data/fiokok.txt", $users);
+            
             $siker = TRUE;
         } else {
             $siker = FALSE;

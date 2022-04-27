@@ -1,5 +1,6 @@
 <?php 
   include "backend/UserClass.php";
+  /*
 
   function loadUsers(string $filename): User{
     $file = fopen($filename, "r");
@@ -24,8 +25,7 @@
     }
     fclose($file);
   }
-
-  /*
+  */
 
   function loadUsers(string $filename): array{
     $users = [];
@@ -56,5 +56,5 @@
     }
     fclose($file);
   }
-  */
+
 ?>
