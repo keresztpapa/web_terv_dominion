@@ -1,3 +1,9 @@
 <div id="user_sync">
-    <?php echo $_SESSION["username"]; ?>
+    <?php 
+        if($_SESSION['username'] != ""){
+            echo $_SESSION["username"]; 
+        }else{
+            echo "asd";
+        }
+    ?>
 </div>
