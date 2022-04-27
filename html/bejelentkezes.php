@@ -6,7 +6,7 @@
     //$checker = true;
 
     function asd(){
-        if(isset($_POST['login_btn'])){
+        //if(isset($_POST['login_btn'])){
             //if(array_key_exists("username", $_SESSION) && array_key_exists("passwd", $_SESSION)){
                 $username = $_POST['username'];
                 $password = $_POST['passwd'];
@@ -21,7 +21,7 @@
             //}else{
             //    echo '<script>alert("A A AA")</script>';
             //}
-        }
+        //}
     }
 
     function logout(){
@@ -129,7 +129,7 @@
                     } 
                 ?>"/><br>
 
-            <input type="submit" value="asd" name="asd"><br>
+            <input type="submit" value="asd1" name="asd"><br>
             <input type="reset" value="Reset"><br>
             <script> 
                 if (sessionStorage.getItem('status') != null){   
