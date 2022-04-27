@@ -3,7 +3,7 @@
     
     include "backend/fajlBeKi.php";
     $fiokok=loadUsers();
-    $checker = true;
+    //$checker = true;
 
     if(isset($_POST['login_btn'])){
         if(array_key_exists("username", $_SESSION) && array_key_exists("passwd", $_SESSION)){
@@ -15,7 +15,10 @@
                     $_SESSION['user'] = $user;
                 }
             }
-            $checker = false;
+            echo '<script>alert("Sikeres Regisztráció")</script>';
+            //$checker = false;
+        }else{
+            echo '<script>alert("A A AA")</script>';
         }
     }
 
