@@ -10,7 +10,7 @@
 
         foreach($fiokok as $user){
             if($user->getUsername() === $username && password_verify($password, $user->getPassword())){
-                $_SESSION["user"] = $user;
+                $_SESSION['user'] = $user;
             }
         }
         $checker = false;
@@ -104,7 +104,7 @@
     <div id="login_box">
         <form method="post">
             <label for="username">Username</label><br>
-            <input type="text" id="username" size="30" value="
+            <input type="text" id="username" size="30" name="username" value="
                 <?php 
                     if (isset($_POST['username'])) {
                         echo $_POST['username']; 
@@ -115,14 +115,14 @@
             <br><br>
             
             <label for="password">Password</label><br>
-            <input type="password" id="password" size="30" value="
+            <input type="password" id="password" size="30" name ="passwd" value="
                 <?php 
                     if (isset($_POST['passwd'])) {
                         echo $_POST['passwd'];
                         $_SESSION['password'] = $_POST['passwd'];
                     } 
                 ?>"/><br>
-            
+                
             <input type="submit" value="Login" name="login_btn"><br>
             <input type="reset" value="Reset"><br>
             <script> 
