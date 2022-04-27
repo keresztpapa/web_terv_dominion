@@ -16,7 +16,7 @@
                 $_SESSION['user'] = $user;
             }
         }
-        include "template/userState.php";
+        echo '<div id="user_sync"> <?php echo $_SESSION["username"]; ?> </div>';
         echo '<script>alert("Sikeres login")</script>';
 
     }
