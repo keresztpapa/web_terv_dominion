@@ -16,6 +16,7 @@
                 $_SESSION['user'] = $user;
             }
         }
+        include "template/userState.php";
         echo '<script>alert("Sikeres login")</script>';
 
     }
@@ -100,8 +101,8 @@
 </head>
 <body>
     <img src="../kepek/logo.png" style="width: 600px;" title="Logo">
-    <?php include_once "template/menu.php"; ?>
-    <?php include_once "template/userState.php";?>
+    <?php include "template/menu.php"; ?>
+    <?php include "template/userState.php";?>
     
     <div id="login_box">
         <form method="post" autocomplete="off">
