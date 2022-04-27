@@ -1,4 +1,5 @@
 <?php 
+  include "backend/UserClass.php";
 
   function loadUsers(string $filename): array{
     $users = [];
@@ -16,8 +17,19 @@
     return $users;
   }
 
+  function saveUsers(string $filename, User $user){
+    $file = fopen($filename, "w");
+    if($file === FALSE){
+      die("rip");
+    }else{
+      $serialized_user = serialize($user);
+      fwrite($file, $serialized_user."\n");
+    }
+    fclose($file);
+  }
+
+  /*
   function saveUsers(string $filename, array $users){
-    //"data/fiokok.txt"
     $file = fopen($filename, "w");
     if ($file === FALSE){
       die("Nem sikerült megnyitni a fajlt!");
@@ -30,5 +42,5 @@
     }
     fclose($file);
   }
-  
+  */
 ?>
