@@ -14,9 +14,9 @@
         foreach($fiokok as $user){
             if($user->getUsername() === $username && password_verify($password, $user->getPassword())){
                 $_SESSION['user'] = $user;
+                echo '<div id="user_sync"> <?php echo $_SESSION["username"]; ?> </div>';
             }
         }
-        echo '<div id="user_sync"> <?php echo $_SESSION["username"]; ?> </div>';
         echo '<script>alert("Sikeres login")</script>';
 
     }
