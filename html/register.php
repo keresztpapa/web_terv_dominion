@@ -7,20 +7,20 @@
     $hibak = [];
   
     if (isset($_POST["register"])) {
-        if (!isset($_POST["usernameReg"]) || trim($_POST["usernameReg"]) === ""){
+        if (!isset($_POST["username"]) || trim($_POST["username"]) === ""){
             $hibak[] = "A felhasználónév megadása kötelező!";
         }
     
-        if (!isset($_POST["passwordReg"]) || trim($_POST["passwordReg"]) === "" || !isset($_POST["passwordAgain"]) || trim($_POST["passwordAgain"]) === ""){
+        if (!isset($_POST["password"]) || trim($_POST["password"]) === "" || !isset($_POST["password2"]) || trim($_POST["password2"]) === ""){
             $hibak[] = "A jelszó és az ellenőrző jelszó megadása kötelező!";
         }
     
-        $felhasznalonev = $_POST["usernameReg"];
-        $jelszo = $_POST["passwordReg"];
-        $jelszo2 = $_POST["passwordAgain"];
+        $felhasznalonev = $_POST["username"];
+        $jelszo = $_POST["password"];
+        $jelszo2 = $_POST["password2"];
 
         foreach ($fiokok as $fiok) {
-            if ($fiok["usernameReg"] === $felhasznalonev){
+            if ($fiok["username"] === $felhasznalonev){
                 $hibak[] = "A felhasználónév már foglalt!";
             } 
         }
@@ -35,7 +35,7 @@
     
         if (count($hibak) === 0) {
             $jelszo = password_hash($jelszo, PASSWORD_DEFAULT);
-            $fiokok[] = ["usernameReg" => $felhasznalonev, "passwordReg" => $jelszo];
+            $fiokok[] = ["username" => $felhasznalonev, "password" => $jelszo];
             saveUsers($fiokok);
             $siker = TRUE;
         } else {
@@ -130,10 +130,10 @@
             <input type="text" name="username" id="nev" size="30" <?php if (isset($_POST["username"])) echo "value='" . $_POST["username"] . "'" ?> ><br><br>
             
             <label for="pwd">Password</label><br>
-            <input type="password" name="password" id="pwd" size="30" <?php if (isset($_POST["password"])) echo "value='" . $_POST["password"] . "'" ?> ><br>
+            <input type="password" name="password" id="pwd" size="30"><br>
             
             <label for="pwdAgain">Password Again</label><br>
-            <input type="password" name="password2" size="30" id="pwdAgain" <?php if (isset($_POST["password2"])) echo "value='" . $_POST["password2"] . "'" ?> ><br>
+            <input type="password" name="password2" size="30" id="pwdAgain"><br>
             
             <input type="submit" value="Submit" name="register"><br>
             
