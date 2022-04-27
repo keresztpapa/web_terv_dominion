@@ -1,6 +1,6 @@
 <?php
     include "backend/fajlBeKi.php";
-    include "backend/UserClass.php";
+    //include "backend/UserClass.php";
     session_start();
     $fiokok=loadUsers("data/fiokok.txt");
 
