@@ -36,8 +36,10 @@
         if (count($hibak) === 0) {
             $jelszo = password_hash($jelszo, PASSWORD_DEFAULT);
             $fiokok[] = ["username" => $felhasznalonev, "password" => $jelszo];
+            
             $user = new User($felhasznalonev, $jelszo);
-            saveUsers("data/fiokok.txt", $fiokok);
+            
+            saveUsers("data/fiokok.txt", $user);
             $siker = TRUE;
         } else {
             $siker = FALSE;
