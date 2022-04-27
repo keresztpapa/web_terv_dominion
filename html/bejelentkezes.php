@@ -5,20 +5,22 @@
     $fiokok=loadUsers();
     //$checker = true;
 
-    if(isset($_POST['login_btn'])){
-        if(array_key_exists("username", $_SESSION) && array_key_exists("passwd", $_SESSION)){
-            $username = $_POST['username'];
-            $password = $_POST['passwd'];
-         
-            foreach($fiokok as $user){
-                if($user->getUsername() === $username && password_verify($password, $user->getPassword())){
-                    $_SESSION['user'] = $user;
+    function asd(){
+        if(isset($_POST['login_btn'])){
+            //if(array_key_exists("username", $_SESSION) && array_key_exists("passwd", $_SESSION)){
+                $username = $_POST['username'];
+                $password = $_POST['passwd'];
+            
+                foreach($fiokok as $user){
+                    if($user->getUsername() === $username && password_verify($password, $user->getPassword())){
+                        $_SESSION['user'] = $user;
+                    }
                 }
-            }
-            echo '<script>alert("Sikeres Regisztráció")</script>';
-            //$checker = false;
-        }else{
-            echo '<script>alert("A A AA")</script>';
+                echo '<script>alert("Sikeres Regisztráció")</script>';
+                //$checker = false;
+            //}else{
+            //    echo '<script>alert("A A AA")</script>';
+            //}
         }
     }
 
@@ -127,7 +129,7 @@
                     } 
                 ?>"/><br>
 
-            <input type="submit" value="Login" name="login_btn"><br>
+            <input type="submit" value="asd" name="asd"><br>
             <input type="reset" value="Reset"><br>
             <script> 
                 if (sessionStorage.getItem('status') != null){   
