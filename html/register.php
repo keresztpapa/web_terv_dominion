@@ -20,9 +20,9 @@
         $jelszo2 = $_POST["password2"];
 
         foreach ($fiokok as $fiok) {
-            if ($fiok["username"] === $felhasznalonev){
+            if ($fiok->getUsername() === $felhasznalonev){
                 $hibak[] = "A felhasználónév már foglalt!";
-            } 
+            }
         }
     
         if (strlen($jelszo) < 8) {
@@ -43,11 +43,15 @@
             $siker = TRUE;
         } else {
             $siker = FALSE;
-            print_r($hibak);
         }
 
         if ($siker === TRUE) {
             echo '<script>alert("Sikeres Regisztráció")</script>';
+        }
+        else{
+            foreach($hibak as $hiba){
+                echo '<script>alert("'.$hiba.'")</script>';
+            }
         }
     }
 ?>
@@ -130,7 +134,7 @@
     <div id="login_box">
         <form method="post">
             <label for="nev">Username</label><br>
-            <input type="text" name="username" id="nev" size="30" <?php if (isset($_POST["username"])) echo "value='" . $_POST["username"] . "'" ?> ><br><br>
+            <input type="text" name="username" id="nev" size="30"><br><br>
             
             <label for="pwd">Password</label><br>
             <input type="password" name="password" id="pwd" size="30"><br>
