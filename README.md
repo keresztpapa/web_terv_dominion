@@ -28,7 +28,7 @@
 [ &#9989; ] 5 részletes kidolgozott php<br/>
 [ &#9989; ] Adattovábbítás HTTP POST-tal<br/>
 [ &#9989; ] Intuitív inputok, azaz jelzik hol mit kér<br/>
-[ ] GET paraméter<br/>
+[ &#9989; ] GET paraméter<br/>
 [ &#9989; ] OOP<br/>
 [ &#9989; ] Sütik értelmes használata<br/>
 [ &#9989; ] Regisztráció-->adatok tárolása<br/>
@@ -42,7 +42,7 @@
 [ &#9989; ] Kijelentkezés<br/>
 [ ] f.h-k módosíthatnak adatot (sajátot)<br/>
 [ elengedve ] Profilkép feltöltés<br/>
-[ TESZTELNI ] F.h.-i fiók törlése<br/>
+[ &#9989; ] F.h.-i fiók törlése<br/>
 [ ] Más f.h. adatainak megtekitése+saját adatok publikussá tétele( vagy nem)<br/>
 [ ] Üzenet küldés<br/>
 [ ] Jogosultságok<br/>

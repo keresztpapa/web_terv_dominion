@@ -8,8 +8,11 @@
         header("Location: bejelentkezes.php");
     }
 
-    if(isset($_POST['delete-btn'])){
+    if(isset($_GET['delete-btn'])){
         deleteUser("data/fiokok.txt",$_SESSION['user']);
+        setcookie("user_nev", time() - 3600);
+        session_destroy();
+        session_unset();
         header("Location: bejelentkezes.php");
     }
 ?>
@@ -110,7 +113,9 @@
             </tr>
             <tr>
                 <th> Fiók törlés: </th>
-                <td> <input type="submit" name="delete-btn" value="fiok torles"> </td>
+                <form method="GET">
+                    <td> <input type="submit" name="delete-btn" value="fiok torles"> </td>
+                </form>
             </tr>
         </table>
 

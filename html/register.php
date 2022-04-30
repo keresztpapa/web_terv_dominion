@@ -134,13 +134,13 @@
     <div id="login_box">
         <form method="post">
             <label for="nev">Username</label><br>
-            <input type="text" name="username" id="nev" size="30"><br><br>
+            <input type="text" name="username" id="nev" size="30" required>><br><br>
             
             <label for="pwd">Password</label><br>
-            <input type="password" name="password" id="pwd" size="30"><br>
+            <input type="password" name="password" id="pwd" size="30" required>><br>
             
             <label for="pwdAgain">Password Again</label><br>
-            <input type="password" name="password2" size="30" id="pwdAgain"><br>
+            <input type="password" name="password2" size="30" id="pwdAgain" required>><br>
             
             <input type="submit" value="Submit" name="register"><br>
             
