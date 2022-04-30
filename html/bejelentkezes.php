@@ -13,9 +13,7 @@
         foreach($fiokok as $user){
             if($user->getUsername() === $username && password_verify($password, $user->getPassword())){
                 $_SESSION['user'] = $user;
-                $cookie_name = "user_nev";
-                $cookie_value = $username;
-                setcookie("user_nev", $cookie_value, time() + (86400 * 30), "/");
+                setcookie("user_nev", $$username, time() + (86400 * 30), "/");
             }
         }
         echo '<script>alert("Sikeres login")</script>';
@@ -24,8 +22,8 @@
     if(isset($_POST['logout'])){
         echo '<script>alert("Sikeres logout")</script>';
         setcookie("user_nev", time() - 3600);
-        session_unset();
         session_destroy();
+        session_unset();
     }
 ?>
 
@@ -103,7 +101,7 @@
 <body>
     <img src="../kepek/logo.png" style="width: 600px;" title="Logo">
     <?php include "template/menu.php"; ?>
-    <?php include "template/userState.php";?>
+    <?php include "template/userState.php"; ?>
     
     <div id="login_box">
         <form method="post" autocomplete="off">

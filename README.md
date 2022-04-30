@@ -29,17 +29,17 @@
 [ &#9989; ] Adattovábbítás HTTP POST-tal<br/>
 [ &#9989; ] Intuitív inputok, azaz jelzik hol mit kér<br/>
 [ ] GET paraméter<br/>
-[  &#9989; ] OOP<br/>
-[  &#9989; ] Sütik értelmes használata<br/>
+[ &#9989; ] OOP<br/>
+[ &#9989; ] Sütik értelmes használata<br/>
 [ &#9989; ] Regisztráció-->adatok tárolása<br/>
 [ &#9989; ] Űrlapmező kitöltés szerveroldalon ellenőrizni<br/>
 [ &#9989; ] Kezelje ha van foglalt f.h.név vagy e-mail<br/>
 [ &#9989; ] Jelszót 2szer beírni<br/>
 [ &#9989; ] Rosszul kitöltött/ nem kitöltött mezőkre figyelmeztessen<br/>
 [ &#9989; ] Jelszavak biztonnságos tárolása<br/>
-[  &#9989; ] Bejelentkezés az oldalra<br/>
-[ #Tesztelni kell  ] Bejelentkezett f.h.-k lássanak bizonyos oldalakat<br/>
-[ ] Kijelentkezés<br/>
+[ &#9989; ] Bejelentkezés az oldalra<br/>
+[ &#9989; ] Bejelentkezett f.h.-k lássanak bizonyos oldalakat<br/>
+[ &#9989; ] Kijelentkezés<br/>
 [ ] f.h-k módosíthatnak adatot (sajátot)<br/>
 [ #in progress ] Profilkép feltöltés<br/>
 [ ] F.h.-i fiók törlése<br/>

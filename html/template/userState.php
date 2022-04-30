@@ -1,16 +1,9 @@
 <div id="user_sync">
     <?php 
-        /*
-        if(isset($_SESSION['username'])){
-            echo $_SESSION['username']; 
-        }else{
-            echo '<li><a>Anonym</a></li>';
-        }*/
-
-        if(!isset($_COOKIE["user_nev"])) {
-            echo "Cookie named '" . $cookie_name . "' is not set!";
+        if(isset($_COOKIE["cookie_value"])) {
+            echo $_COOKIE["cookie_value"];
           } else {
-            echo $_COOKIE["user_nev"];
+            echo "Anonym";
           }
     ?>
 </div>

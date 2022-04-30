@@ -10,14 +10,6 @@
 
     define("DEF_PIC", "/kepek/mosomedve.jpg");
     $profilkep = DEF_PIC;
-
-    $path = "kepek/" . $_SESSION["user"]->getUsername();
-    $extensions = ["jpg","png"];
-    foreach ($extensions as $ex){
-        if(file_exists("$path.$ex")){
-            $profilkep = "$utvonal.$kit";
-        }
-    }
 ?>
 
 <!DOCTYPE html>
@@ -103,7 +95,7 @@
             </tr>
             <tr>
                 <td colspan="2">
-                    <img src="<?php echo $profilkep; ?>" alt="Profilkép" height="200">
+                    <img src="../kepek/mosomedve.jpg" alt="Profilkép" height="200px" width="200px">
                     <form action="felhasznalo.php" method="POST" enctype="multipart/form-data">
                         <input type="file" name="profile-picture">
                         <input type="submit" name="upload-btn" value="Profilkép módosítása">
@@ -112,19 +104,7 @@
             </tr>
             <tr>
                 <th>Felhasználónév</th>
-                <td><?php echo $user->getUsername(); ?></td>
-            </tr>
-            <tr>
-                <th>E-mail cím</th>
-                <td><?php echo $user->getEmail(); ?></td>
-            </tr>
-            <tr>
-                <th>Születési év</th>
-                <td><?php echo $user->getSzuletesiEv(); ?></td>
-            </tr>
-            <tr>
-                <th>Nem</th>
-                <td><?php echo $user->getNem(); ?></td>
+                <td><?php echo $_SESSION['user']->getUsername(); ?></td>
             </tr>
         </table>
 

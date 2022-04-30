@@ -5,11 +5,12 @@ class User{
   public string $passwd;  
   public int $szulDatum;
   public string $nem;
+  public string $email;
 
   public function __construct(string $usrnm, string $pass){
       $this->username = $usrnm;
       $this->passwd = $pass;
-  }
+    }
 
   public function getUsername():string {
       return $this->username;
