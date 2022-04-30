@@ -41,8 +41,8 @@
 [ &#9989; ] Bejelentkezett f.h.-k lássanak bizonyos oldalakat<br/>
 [ &#9989; ] Kijelentkezés<br/>
 [ ] f.h-k módosíthatnak adatot (sajátot)<br/>
-[ #in progress ] Profilkép feltöltés<br/>
-[ ] F.h.-i fiók törlése<br/>
+[ elengedve ] Profilkép feltöltés<br/>
+[ TESZTELNI ] F.h.-i fiók törlése<br/>
 [ ] Más f.h. adatainak megtekitése+saját adatok publikussá tétele( vagy nem)<br/>
 [ ] Üzenet küldés<br/>
 [ ] Jogosultságok<br/>

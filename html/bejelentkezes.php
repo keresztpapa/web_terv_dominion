@@ -13,7 +13,7 @@
         foreach($fiokok as $user){
             if($user->getUsername() === $username && password_verify($password, $user->getPassword())){
                 $_SESSION['user'] = $user;
-                setcookie("user_nev", $$username, time() + (86400 * 30), "/");
+                setcookie("user_nev", $username, time() + (86400 * 30), "/");
             }
         }
         echo '<script>alert("Sikeres login")</script>';

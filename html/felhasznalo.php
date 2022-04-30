@@ -8,8 +8,10 @@
         header("Location: bejelentkezes.php");
     }
 
-    define("DEF_PIC", "/kepek/mosomedve.jpg");
-    $profilkep = DEF_PIC;
+    if(isset($_POST['delete-btn'])){
+        deleteUser("data/fiokok.txt",$_SESSION['user']);
+        header("Location: bejelentkezes.php");
+    }
 ?>
 
 <!DOCTYPE html>
@@ -105,6 +107,10 @@
             <tr>
                 <th>Felhasználónév</th>
                 <td><?php echo $_SESSION['user']->getUsername(); ?></td>
+            </tr>
+            <tr>
+                <th> Fiók törlés: </th>
+                <td> <input type="submit" name="delete-btn" value="fiok torles"> </td>
             </tr>
         </table>
 
