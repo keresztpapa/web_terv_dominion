@@ -5,20 +5,20 @@
     $fiokok=loadUsers("data/fiokok.txt");
     //$checker = true;
 
-
     if(isset($_POST['login_btn'])){
-            
+        
         $username = $_POST['username'];
         $password = $_POST['password'];
     
         foreach($fiokok as $user){
             if($user->getUsername() === $username && password_verify($password, $user->getPassword())){
                 $_SESSION['user'] = $user;
-                echo '<div id="user_sync"> <?php echo $_SESSION["username"]; ?> </div>';
-            }
+                $cookie_name = "user_nev";
+                $cookie_value = $username;
+                setcookie("user_nev", $cookie_value, time() + (86400 * 30), "/");
+                }
         }
         echo '<script>alert("Sikeres login")</script>';
-
     }
 
     if(isset($_POST['logout'])){
@@ -119,7 +119,7 @@
             <input type="reset" value="Reset"><br>
 
             <?php
-                if(array_key_exists("userame", $_SESSION) && $username != ""){
+                if(isset($_COOKIE["user_nev"])) {
                     echo '<input type="submit" value="Logout" name="logout"><br>';
                 }
             ?>

@@ -11,16 +11,17 @@
         <li><a href="register.php">Regisztracio</a></li>
         
         <?php
-            if (session_status() == PHP_SESSION_NONE) {
-               session_start();
-            } 
-            
-            if(array_key_exists("userame", $_SESSION) && $username != ""){
+            /*
+            if(isset($_SESSION['username'])){
                echo '<li><a href="felhasznalo.php">Fiók</a></li>';
+            }else{
+               echo '<li><a>Anonym</a></li>';
             }
+            */
+            if(isset($_COOKIE["user_nev"])) {
+               echo '<li><a href="felhasznalo.php">Fiók</a></li>';
+             } else {
+               echo '<li><a>Anonym</a></li>';
+             }
         ?>
 </ul>
-
-
-
-

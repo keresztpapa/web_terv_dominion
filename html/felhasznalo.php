@@ -1,7 +1,6 @@
 <?php
 
-    include "backend/UserClass.php";
-    include "backend/backend_template.php";
+    //include "backend/UserClass.php";
     include "backend/fajlBeKi.php";
     
     if(!isset($_SESSION["status"])){
