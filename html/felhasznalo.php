@@ -5,7 +5,7 @@
     session_start();
 
     if(!isset($_SESSION['user'])){
-        header("Location:: bejelentkezes.php");
+        header("Location: bejelentkezes.php");
     }
 
     define("DEF_PIC", "/kepek/mosomedve.jpg");
