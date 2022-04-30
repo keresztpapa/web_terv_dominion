@@ -1,7 +1,7 @@
 <?php 
-  include "backend/UserClass.php";
   /*
-
+  include "backend/UserClass.php";
+  
   function loadUsers(string $filename): User{
     $file = fopen($filename, "r");
     if ($file === FALSE)

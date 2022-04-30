@@ -4,7 +4,7 @@ class User{
   public string $username;
   public string $passwd;  
   public int $szulDatum;
-  public Sring $nem;
+  public string $nem;
 
   public function __construct(string $usrnm, string $pass){
       $this->username = $usrnm;
@@ -28,20 +28,20 @@ class User{
   }
 
   public function getSzul(): int{
-    return $this->$szulDatum;
+    return $this->szulDatum;
   }
 
   public function setSzul(int $asd): void{
-    $this->$szulDatum = $asd;
+    $this->szulDatum = $asd;
   }
 
 
   public function getNem(): string{
-    return $this->$nem;
+    return $this->nem;
   }
 
   public function setNem(string $asd): void{
-    $this->$nem = $asd;
+    $this->nem = $asd;
   }
 }
 ?>

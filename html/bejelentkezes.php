@@ -22,7 +22,8 @@
     }
 
     if(isset($_POST['logout'])){
-        echo '<script>alert("Sikeres login")</script>';
+        echo '<script>alert("Sikeres logout")</script>';
+        setcookie("user_nev", $cookie_value , time() - 3600);
         session_unset();
         session_destroy();
     }

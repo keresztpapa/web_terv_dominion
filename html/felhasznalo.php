@@ -1,27 +1,23 @@
 <?php
 
-    //include "backend/UserClass.php";
     include "backend/fajlBeKi.php";
-    
-    if(!isset($_SESSION["status"])){
+    include "backend/UserClass.php";
+    session_start();
+
+    if(!isset($_SESSION['user'])){
         header("Location:: bejelentkezes.php");
     }
 
     define("DEF_PIC", "/kepek/mosomedve.jpg");
     $profilkep = DEF_PIC;
 
-    $path = "kepek/" . $_SESSION["user"]->getFelhasznalonev();
+    $path = "kepek/" . $_SESSION["user"]->getUsername();
     $extensions = ["jpg","png"];
     foreach ($extensions as $ex){
         if(file_exists("$path.$ex")){
             $profilkep = "$utvonal.$kit";
         }
     }
-
-    $err = [];
-
-
-
 ?>
 
 <!DOCTYPE html>
@@ -99,16 +95,6 @@
     <img src="../kepek/logo.png" style="width: 600px;" title="Logo">
     <?php include_once "template/menu.php"; ?>
     <?php include_once "template/userState.php";?>
-    <?php
-        if (count($hibak) > 0) {
-            echo "<div class='errors'>";
-            foreach ($hibak as $hiba) {
-                echo "<p>" . $hiba . "</p>";
-            }
-            echo "</div>";
-        }
-        $user = $_SESSION["user"];
-    ?>
 
     
         <table id="profile-table">
@@ -126,7 +112,7 @@
             </tr>
             <tr>
                 <th>Felhasználónév</th>
-                <td><?php echo $user->getFelhasznalonev(); ?></td>
+                <td><?php echo $user->getUsername(); ?></td>
             </tr>
             <tr>
                 <th>E-mail cím</th>
