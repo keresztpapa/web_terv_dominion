@@ -1,9 +1,9 @@
 <?php
     session_start();
-    //include "backend/UserClass.php";
     include "backend/fajlBeKi.php";
+    include "backend/UserClass.php";
     $fiokok=loadUsers("data/fiokok.txt");
-    //$checker = true;
+
 
     if(isset($_POST['login_btn'])){
         
@@ -16,14 +16,14 @@
                 $cookie_name = "user_nev";
                 $cookie_value = $username;
                 setcookie("user_nev", $cookie_value, time() + (86400 * 30), "/");
-                }
+            }
         }
         echo '<script>alert("Sikeres login")</script>';
     }
 
     if(isset($_POST['logout'])){
         echo '<script>alert("Sikeres logout")</script>';
-        setcookie("user_nev", $cookie_value , time() - 3600);
+        setcookie("user_nev", time() - 3600);
         session_unset();
         session_destroy();
     }
@@ -112,7 +112,7 @@
             <br><br>
             
             <label for="jelsz">Password</label><br>
-            <input type="password" name="password" id="jelsz" size="30" required>
+            <input type="password" name="password" id="jelsz" size="30">
 
             <input type="submit" name="login_btn" value="Bejelentkezés">
             
