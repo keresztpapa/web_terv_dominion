@@ -86,7 +86,7 @@ HTML ismeretek (min: 15 pont)
 Urlapok - 13 pont
 
 [ &#9989; ] Az oldal tartalmaz legalább 1 ¶rlapot, amelynek van legalább 4 megfelel® módon felhasznált input mez®je (0/3 pont)
-[ ] Összesen legalább 6 különböz® típusú input mez® található (0/4 pont)
+[ ] Összesen legalább 6 különböz® típusú input mez® található (0/4 pont)   ++++++++++++++++++++++++++++++++++++++++++++++++++++++
 [ &#9989; ] Van olyan ¶rlap, amelyik tartalmaz elküldés (submit) gombot (0/2 pont)
 [ ] Van olyan ¶rlap, amelyik tartalmaz alapállapot (reset) gombot (0/2 pont)
 [ ] Van olyan ¶rlap, amelyik tartalmaz mez®csoportosítást (0/2 pont)
@@ -97,15 +97,15 @@ aside, main, section, article) (mindegyik 1 pont, max 4 pont)
 
 Táblázatok - 6 pont
 [ &#9989; ] A weboldal legalább 1 táblázatot tartalmaz (0/2 pont)
-[ ] Létezik olyan táblázat, amelynek van fejléce, ami másképpen jelenik meg (0/2 pont)
-[ ] Létezik olyan táblázat, amely használ headers attribútumot megfelel® módon (0/2 pont)
+[ &#9989; ] Létezik olyan táblázat, amelynek van fejléce, ami másképpen jelenik meg (0/2 pont)
+[ &#9989; ] Létezik olyan táblázat, amely használ headers attribútumot megfelel® módon (0/2 pont)
 
 Multimédiás elemek - 4 pont
 [ &#9989; ] A weboldal tartalmaz multimédiás elemeket (hang- és videóállomány) (0/2/4 pont)
 
 HTML tagek használata - 10 pont
-[ ] Strukturális elemek céljuknak megfelel®en használva (címsor, p, iframe, em, strong, blockquote, code, sub, sup, mark, hr, pre, q) (mindegyik 1 pont, max 5 pont)
-[ ] Listák használata (0/2 pont)
+[ &#9989; ] Strukturális elemek céljuknak megfelel®en használva (címsor, p, iframe, em, strong, blockquote, code, sub, sup, mark, hr, pre, q) (mindegyik 1 pont, max 5 pont)
+[ &#9989; ] Listák használata (0/2 pont)
 [ ] Flexbox vagy grid használata (0/3 pont)
 CSS ismeretek (min: 15 pont)
 

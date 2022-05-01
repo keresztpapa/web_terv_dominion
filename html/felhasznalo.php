@@ -96,7 +96,7 @@
     
         <table id="profile-table">
             <tr>
-                <th colspan="2">Felhasználói adatok</th>
+                <th colspan="2" id="fejlec">Felhasználói adatok</th>
             </tr>
             <tr>
                 <td colspan="2">
@@ -108,7 +108,7 @@
                 </td>
             </tr>
             <tr>
-                <th>Felhasználónév</th>
+                <th> Felhasználónév: </th>
                 <td><?php echo $_SESSION['user']->getUsername(); ?></td>
             </tr>
             <tr>
@@ -118,12 +118,6 @@
                 </form>
             </tr>
         </table>
-
-
-    <div id="cetli">A mezők kitöltése kötelező!</div>
-
-    <br>
-
     <?php include_once "template/footer.php"; ?>
 </body>
 </html> 

@@ -25,6 +25,7 @@
         session_destroy();
         session_unset();
     }
+
 ?>
 
 <!DOCTYPE html>

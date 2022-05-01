@@ -3,7 +3,7 @@
         if(isset($_COOKIE["cookie_value"])) {
             echo $_COOKIE["cookie_value"];
           } else {
-            echo "Anonym";
+            echo '<b>Anonym</b>';
           }
     ?>
 </div>

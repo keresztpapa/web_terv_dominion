@@ -288,3 +288,8 @@ img[title="Logo"]{
     margin-left: auto; 
     float: right;
 }
+
+#fejlec{
+    background-color: black;
+    color: white;
+}
