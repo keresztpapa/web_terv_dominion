@@ -113,7 +113,7 @@ CSS használata - 23 pont
 [ &#9989; ] A projekt tartalmaz legalább 1 CSS fájlt, és az fel is van használva (0/3 pont)
 [ &#9989; ] Elem szelektor használva van legalább 1 helyen (0/1 pont)
 [ &#9989; ] Id szelektor használva van legalább 1 helyen (0/1 pont)
-[ &#9989; ] Class szelektor használva van legalább 1 helyen (0/1 pont)
+[ &#9989;    ] Class szelektor használva van legalább 1 helyen (0/1 pont)
 [ ] Attribútum alapján való kijelölés használva van legalább 1 helyen (0/1 pont)
 [ ] Kapcsolat alapján való kijelölés használva van legalább 1 helyen (0/1 pont)
 [ &#9989; ] z-index használata (0/1 pont)
@@ -131,7 +131,7 @@ HTML elemek testreszabása - 15 pont
 pont, max 2 pont)
 [ &#9989; ] Pozicionálás (absolute, xed, relative, static, sticky) (mindegyik 1 pont, max 3 pont)
 [ &#9989; ] Árnyékok használata (HTML elemekre vagy szövegekre) (0/2 pont)
-[ ] Transzformálás (eltolás, forgatás, skálázás, nyírás) használata (mindegyik 1 pont, max 3
+[ 1 ] Transzformálás (eltolás, forgatás, skálázás, nyírás) használata (mindegyik 1 pont, max 3
 pont)
 
 PHP ismeretek (min: 15 pont)

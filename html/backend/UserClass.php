@@ -3,13 +3,14 @@
 class User{
   public string $username;
   public string $passwd;  
-  public int $szulDatum;
-  public string $nem;
   public string $email;
+  public string $gender;
 
-  public function __construct(string $usrnm, string $pass){
+  public function __construct(string $usrnm, string $pass, string $mail, string $gend){
       $this->username = $usrnm;
       $this->passwd = $pass;
+      $this->email = $mail;
+      $this->gender = $gend;
     }
 
   public function getUsername():string {
@@ -28,21 +29,20 @@ class User{
       $this->passwd = $asd; 
   }
 
-  public function getSzul(): int{
-    return $this->szulDatum;
+  public function getGender(): string{
+    return $this->gender;
   }
 
-  public function setSzul(int $asd): void{
-    $this->szulDatum = $asd;
+  public function setGender(string $asd): void{
+    $this->gender = $asd;
   }
 
-
-  public function getNem(): string{
-    return $this->nem;
+  public function getEamil(): string{
+    return $this->email;
   }
 
-  public function setNem(string $asd): void{
-    $this->nem = $asd;
+  public function setEamil(string $asd): void{
+    $this->email = $asd;
   }
 }
 ?>

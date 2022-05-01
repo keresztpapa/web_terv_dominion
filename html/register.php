@@ -7,6 +7,8 @@
     $hibak = [];
   
     if (isset($_POST["register"])) {
+        if(!isset($_POST['eula'])) $hibak[] = "Az eula nincs elfogadva!";
+
         if (!isset($_POST["username"]) || trim($_POST["username"]) === ""){
             $hibak[] = "A felhasználónév megadása kötelező!";
         }
@@ -15,9 +17,13 @@
             $hibak[] = "A jelszó és az ellenőrző jelszó megadása kötelező!";
         }
     
+        if(!isset($_POST['email']) || trim($_POST['email']) === "" ) $hibak[] = "Nincs email!";
+
         $felhasznalonev = $_POST["username"];
         $jelszo = $_POST["password"];
         $jelszo2 = $_POST["password2"];
+        $email = $_POST['email'];
+        $gender = $_POST['gender'];
 
         foreach ($fiokok as $fiok) {
             if ($fiok->getUsername() === $felhasznalonev){
@@ -36,7 +42,7 @@
         if (count($hibak) === 0) {
             $jelszo = password_hash($jelszo, PASSWORD_DEFAULT);
 
-            $user = new User($felhasznalonev, $jelszo);
+            $user = new User($felhasznalonev, $jelszo, $email, $gender);
             $users[] = $user;
             saveUsers("data/fiokok.txt", $users);
             
@@ -142,6 +148,19 @@
             <label for="pwdAgain">Password Again</label><br>
             <input type="password" name="password2" size="30" id="pwdAgain" required><br>
             
+            <label>EMAIL</label>
+            <input type="email" name="email"><br>
+
+            <label>Gender:</label>
+            <select name="gender">
+                <option value="male">MALE</option>
+                <option value="female">FEMALE</option>
+                <option value="apache helicopter">apache helicopter</option>
+            </select><br>
+            
+            <label>EULA:  </label>
+            <input type="checkbox" name="eula" required><br>
+
             <input type="submit" value="Submit" name="register"><br>
             
             <input type="reset" value="Reset"><br>
@@ -156,7 +175,7 @@
 
     <br>
 
-    <?php include_once "template/footer.php"; ?>
+    
 </body>
 </html> 
 
